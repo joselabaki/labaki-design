@@ -1,3 +1,6 @@
 <%= @project.title%>
 <%= @project.body%>
 <%= @project.description %>
+<% @project.images.each do |i| %>
+<%= image_tag (i.url)%>
+<% end %>
