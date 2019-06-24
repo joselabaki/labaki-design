@@ -4,5 +4,6 @@ class Project < ApplicationRecord
   extend FriendlyId
   friendly_id :title, use: [:slugged]
 
+  translates :title , :body , :description
 
 end

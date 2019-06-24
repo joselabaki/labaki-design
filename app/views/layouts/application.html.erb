@@ -13,6 +13,8 @@
     <%= yield %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    <p><%= link_to_unless_current 'en' , locale: 'en' %> |
+    <%= link_to_unless_current 'fr' , locale: 'fr' %> </p>
 
   </body>
 </html>

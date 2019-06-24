@@ -93,6 +93,10 @@ GEM
       activerecord (>= 4.0.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    globalize (5.3.0)
+      activemodel (>= 4.2, < 6.1)
+      activerecord (>= 4.2, < 6.1)
+      request_store (~> 1.0)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
     io-like (0.3.0)
@@ -157,6 +161,8 @@ GEM
     rb-inotify (0.10.0)
       ffi (~> 1.0)
     regexp_parser (1.5.1)
+    request_store (1.4.1)
+      rack (>= 1.4)
     responders (2.4.1)
       actionpack (>= 4.2.0, < 6.0)
       railties (>= 4.2.0, < 6.0)
@@ -223,6 +229,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise
   friendly_id
+  globalize
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
