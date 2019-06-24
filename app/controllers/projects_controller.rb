@@ -13,7 +13,7 @@ end
   end
 
   def edit
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
      end
 
   def create
@@ -27,7 +27,7 @@ end
   end
 
   def update
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
 
     if @project.update(project_params)
       redirect_to @project
@@ -39,11 +39,11 @@ end
 
   def show
     @projects = Project.all
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
   end
 
   def destroy
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
     @project.destroy
 
     redirect_to projects_path
