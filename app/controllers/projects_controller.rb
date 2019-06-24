@@ -1,10 +1,13 @@
 class ProjectsController < ApplicationController
-
+  before_action :authenticate_admin!, except: [:show , :index]
 
   def index
+    if params[:category]
+      @projects = Project.where(:category => params[:category])
+    else
     @projects = Project.all
   end
-
+end
   def new
     @project = Project.new
   end
@@ -53,5 +56,5 @@ end
 private
 
 def project_params
-  params.require(:project).permit(:title, :body , :description,  {images: []})
+  params.require(:project).permit(:title, :body , :description,  {images: []}, :category)
 end

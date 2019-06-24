@@ -29,9 +29,15 @@
         <%= form.label :body %><br>
         <%= form.text_area :body , size: "80x60" %>
       </p>
+
+      <p>    <%= form.label :category %><br>
+        <%=form.select :category , ['graphic' , 'industrial'] %></p>
+          <p>
   <p>    <%= form.label :images %><br>
     <%= form.file_field :images, multiple: true %></p>
       <p>
+
+
         <%= form.submit %>
       </p>
     <% end %>

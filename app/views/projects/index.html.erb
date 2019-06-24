@@ -1,7 +1,20 @@
+<%= link_to "Graphic Design", projects_path(:category => "graphic") %>
+<%= link_to "Industrial Design", projects_path(:category => "industrial") %>
+
+
+
 <% @projects.each do |p| %>
 <div>
-<p><%= p.title %></p>
-<p><%= p.description %></p>
-<p><%= p.body %></p>
+<p><%= link_to project_path(p) do %>
+<%= p.title %>
+<%end%>
+
+</p>
+
+<% if current_admin%>
+<%= link_to 'Edit', edit_project_path(p) %>
+<%= link_to 'Destroy', project_path(p),method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
 </div>
 <% end %>
+<%= render "admin" %>

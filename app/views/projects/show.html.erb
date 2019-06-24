@@ -1,6 +1,7 @@
-<%= @project.title%>
-<%= @project.body%>
-<%= @project.description %>
+<h1><%= @project.title%></h1>
+<h3><%= @project.category %></h3>
+<h2><%= @project.body%></h2>
+<h3><%= @project.description %></h3>
 <% @project.images.each do |i| %>
 <%= image_tag (i.url)%>
 <% end %>
