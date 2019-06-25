@@ -1,5 +1,6 @@
 en:
-  about: 'about'
+  about: 'About'
+  home: 'Home'
   projects:
     index:
       page-name: 'Projects'

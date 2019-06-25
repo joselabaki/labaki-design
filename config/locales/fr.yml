@@ -1,5 +1,6 @@
 fr:
-  about: 'a propos'
+  about: 'A Propos'
+  home: 'Accceuil'
   projects:
     index:
       page-name: 'Les projects'
