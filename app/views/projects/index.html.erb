@@ -1,13 +1,13 @@
 <% provide(:title, t('home')) %>
 
-
-<h1><%=t ".page-name" %></h1>
-
 <% @projects.each do |p| %>
 <div>
 <p><%= link_to project_path(p) do %></p>
-<%= p.title %>
-<%end%>
+<p><%= p.title %></p><%end%>
+<p><%= p.description %></p>
+<p><%= p.category %> - <%= p.subcategory %> </p>
+<hr>
+
 <%end%>
 
 <div class="heterodox">

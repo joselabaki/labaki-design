@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+html{height: 100%;}
+body{
+  margin: 0;
+  padding: 0;
+}
+.main-container{
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+
+.navigation{
+    width: 1201px;
+    margin: 0 auto;
+    right: 0;
+    left: -1px;
+    top:0px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    position: fixed;
+    display: inline;
+    border-bottom: 1px solid black;
+
+
+}

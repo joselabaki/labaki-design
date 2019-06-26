@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_24_194042) do
+ActiveRecord::Schema.define(version: 2019_06_26_192847) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 2019_06_24_194042) do
     t.string "title"
     t.text "body"
     t.text "description"
+    t.text "subcategory"
     t.index ["locale"], name: "index_project_translations_on_locale"
     t.index ["project_id"], name: "index_project_translations_on_project_id"
   end
@@ -59,6 +60,7 @@ ActiveRecord::Schema.define(version: 2019_06_24_194042) do
     t.string "images", default: [], array: true
     t.string "category"
     t.string "slug"
+    t.string "subcategory"
     t.index ["slug"], name: "index_projects_on_slug"
   end
 

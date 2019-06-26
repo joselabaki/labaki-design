@@ -27,12 +27,15 @@
 
       <p>
         <%= form.label :body %><br>
-        <%= form.text_area :body , size: "80x60" %>
+        <%= form.text_area :body , size: "30x30" %>
       </p>
 
       <p>    <%= form.label :category %><br>
-        <%=form.select :category , ['graphic' , 'industrial'] %></p>
+        <%=form.select :category , ['Graphic Design' , 'Industrial Design' ] %></p>
           <p>
+            <p>    <%= form.label :subcategory %><br>
+              <%= form.text_area :subcategory %></p>
+                <p>
   <p>    <%= form.label :images %><br>
     <%= form.file_field :images, multiple: true %></p>
       <p>
