@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Labaki | <%= yield(:title) %> </title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>Phone</h1>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <nav>
+      <%= link_to "Graphic Design", projects_path(:category => "graphic") %>
+      <%= link_to "Industrial Design", projects_path(:category => "industrial") %>
+      <p><%= link_to_unless_current 'en' , locale: 'en' %> |
+      <%= link_to_unless_current 'fr' , locale: 'fr' %> </p>
+      <%= link_to t('about') , about_path %>  <%= link_to "Contact" , contact_path %>
+    </nav>
+      <%= yield %>
+
+  </body>
+</html>

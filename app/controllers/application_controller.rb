@@ -1,10 +1,8 @@
 class ApplicationController < ActionController::Base
 before_action :set_locale
+before_action :detect_device_variant
+protect_from_forgery with: :exception
 
-
-  def hello
-     render html: "under construction"
-   end
 
 private
 
@@ -18,6 +16,9 @@ def default_url_options(options = {})
 end
 
 
+  def detect_device_variant
+    request.variant = :phone if browser.device.mobile?
+  end
 
 
 end
