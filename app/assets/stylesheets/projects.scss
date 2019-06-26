@@ -1,11 +1,7 @@
 // Place all the styles related to the Projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-.heterodox{  background-color: grey;
 #heterodox-logo{
-  path{fill: #DA4567;
-    &:hover {fill:#ffffff}
-  }
-}
-}
+  width: 15%;
+  &:hover {path{fill:#2C2C2C}}
+  path{fill: #F6F6F6;}}

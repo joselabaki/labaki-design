@@ -4,3 +4,6 @@ en:
   projects:
     index:
       page-name: 'Projects'
+      heterodox: >
+       Heterodox is this studios' evil twin. Its projects tackle taboos, inhibitions and hidden truths. They stray away from conventions and abide only by their own rules
+      heterodox-link: 'Show me heterodox' 
