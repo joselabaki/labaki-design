@@ -1,9 +1,12 @@
 fr:
   about: 'A Propos'
   home: 'Accceuil'
+  all-projects: 'Tous'
+  graphic-design: 'Design Graphique'
+  industrial-design: 'Design Industriel'
   projects:
     index:
       page-name: 'Les projects'
       heterodox: >
            heterodox est le double maléfique de ce studio. Ses projets s'attaquent aux taboos, inhibitions et vérités inavouées. Ils s'affranchissent de la norme et du normal ; Ils ne respectent que leurs propres règles
-      heterodox-link: 'Montrez-moi heterodox' 
+      heterodox-link: 'Montrez-moi heterodox'

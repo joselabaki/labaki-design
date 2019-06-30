@@ -1,9 +1,12 @@
 en:
   about: 'About'
   home: 'Home'
+  all-projects: 'All'
+  graphic-design: 'Graphic Design'
+  industrial-design: 'Industrial Design'
   projects:
     index:
       page-name: 'Projects'
       heterodox: >
        Heterodox is this studios' evil twin. Its projects tackle taboos, inhibitions and hidden truths. They stray away from conventions and abide only by their own rules
-      heterodox-link: 'Show me heterodox' 
+      heterodox-link: 'Show me heterodox'
