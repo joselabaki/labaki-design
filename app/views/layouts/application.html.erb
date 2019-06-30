@@ -13,11 +13,25 @@
 
   <body>
     <div class="navigation">
-      <%= link_to "All", projects_path %>
-      <%= link_to "Graphic Design", projects_path(:category => "graphic") %>
-      <%= link_to "Industrial Design", projects_path(:category => "industrial") %>
-    <%= link_to_unless_current 'en' , locale: 'en' %> | <%= link_to_unless_current 'fr' , locale: 'fr' %>
-      <%= link_to t('about') , about_path %>  <%= link_to "Contact" , contact_path %>
+      <div class="logo">Le LOGO</div>
+      <div></div>
+      <div class="links-nav">
+      <div class="projects-nav">
+      <span id="project-span">Projects</span>
+    <div class="nav-inner">
+
+        <p> <%= link_to "All", projects_path %></p>
+        <p><%= link_to "Graphic Design", projects_path(:category => "graphic") %></p>
+        <p> <%= link_to "Industrial Design", projects_path(:category => "industrial") %></p>  </div>
+
+</div>
+
+      <div class="static">
+        <%= link_to t('about') , about_path %></div>
+      <div>  <%= link_to "Contact" , contact_path %></div>
+      <div class="languages"><%= link_to_unless_current 'EN' , locale: 'en' %> | <%= link_to_unless_current 'FR' , locale: 'fr' %></div>
+    </div>
+
 </div>
 <div class="main-container">
 <p class="notice"><%= notice %></p>

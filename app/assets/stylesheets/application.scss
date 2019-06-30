@@ -18,6 +18,7 @@ body{
   margin: 0;
   padding: 0;
 }
+
 .main-container{
   width: 1200px;
   margin: 0 auto;
@@ -33,9 +34,26 @@ body{
     top:0px;
     padding-bottom: 20px;
     padding-top: 50px;
-    position: fixed;
+    position: sticky;
     display: inline;
-    border-bottom: 1px solid black;
-
-
+    border-bottom: 1px solid red;
+    display: grid;
+    grid-template-columns: 20% 20% auto;
+    background-color: white;
 }
+
+.logo{align-self: center;}
+
+
+
+.links-nav{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: end;
+  width: 70%;
+  justify-self: end;
+}
+
+.nav-inner{position: absolute; display: none; padding-left: 10px; padding-right: 10px}
+.projects-nav{padding: 5px; cursor: pointer;}
