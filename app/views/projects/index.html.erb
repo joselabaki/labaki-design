@@ -1,11 +1,18 @@
 <% provide(:title, t('home')) %>
 
 <% @projects.each do |p| %>
-<div>
+<div class="single-project <%= p.title.parameterize%>">
 <p><%= link_to project_path(p) do %></p>
 <p><%= p.title %></p><%end%>
 <p><%= p.description %></p>
 <p><%= p.category %> - <%= p.subcategory %> </p>
+
+<% p.thumbnails.each do |th| %>
+<div class="thumbails-index" id= "<%=p.title.parameterize%>-thumb" >
+<%= image_tag (th.url)%>
+</div>
+<% end %>
+</div>
 <hr>
 
 <%end%>
@@ -15,3 +22,15 @@
   <p><%= t ".heterodox" %></p>
   <p><%=link_to t('.heterodox-link') , 'http://www.heterodox.design' , target: "_blank" %></p>
 </div>
+
+
+<% @projects.each do |p| %>
+
+ <script type="text/javascript">
+$('.<%=p.title.parameterize %>').hover(function(){
+$('#<%=p.title.parameterize%>-thumb').fadeIn()});
+$('.<%=p.title.parameterize %>').mouseleave(function(){
+$('#<%=p.title.parameterize%>-thumb').fadeOut()});
+ </script>
+
+ <%end %>
