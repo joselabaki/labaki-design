@@ -56,5 +56,5 @@ end
 private
 
 def project_params
-  params.require(:project).permit(:title, :body , :description,  {images: []}, :category, :subcategory , {thumbnails: []})
+  params.require(:project).permit(:title, :body , :description,  {images: []}, :category, :subcategory , {thumbnails: []}, :nouveau)
 end
