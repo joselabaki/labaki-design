@@ -1,19 +1,17 @@
 <% provide(:title, t('home')) %>
 
 <% @projects.each do |p| %>
-<div class="single-project <%= p.title.parameterize%>">
-<p><%= link_to project_path(p) do %></p>
-<p><%= p.title %></p><%end%>
-<p><%= p.description %></p>
-<p><%= p.category %> - <%= p.subcategory %> </p>
 
-<% p.thumbnails.each do |th| %>
-<div class="thumbails-index" id= "<%=p.title.parameterize%>-thumb" >
-<%= image_tag (th.url)%>
+<div class="single-project <%= p.title.parameterize%>">
+      <div class="project-info">
+        <div class="project-title"> <%= link_to project_path(p) do %> <%= p.title %><%end%> </div>
+        <div class="subcat"><!-- <%= p.category %> - --> <%= p.subcategory %> </div>
+        <!-- <p><%= p.description %></p> -->
+      </div>
+        <% p.thumbnails.each do |th| %>
+          <div class="thumbails-index" id= "<%=p.title.parameterize%>-thumb" ><%= image_tag (th.url)%></div><% end %>
 </div>
-<% end %>
-</div>
-<hr>
+<hr class="separateur">
 
 <%end%>
 
