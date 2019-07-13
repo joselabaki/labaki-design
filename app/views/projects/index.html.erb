@@ -3,13 +3,9 @@
 <% @projects.each do |p| %>
 
 <div class="single-project <%= p.title.parameterize%>">
-      <div class="project-info">
-        <div class="project-title"> <%= link_to project_path(p) do %> <%= p.title %><%end%> </div>
-        <div class="subcat"><!-- <%= p.category %> - --> <%= p.subcategory %> </div>
-        <!-- <p><%= p.description %></p> -->
-      </div>
-        <% p.thumbnails.each do |th| %>
-          <div class="thumbails-index" id= "<%=p.title.parameterize%>-thumb" ><%= image_tag (th.url)%></div><% end %>
+      <div class="project-info"><div class="project-title"> <%= link_to project_path(p) do %> <%= p.title %><%end%> </div></div>
+      <div class="subcat"><!-- <%= p.category %> - --> <%= p.subcategory %> </div>
+      <% p.thumbnails.each do |th| %><div class="thumbails-index" id= "<%=p.title.parameterize%>-thumb" ><%= image_tag (th.url)%></div><% end %>
 </div>
 <hr class="separateur">
 
@@ -17,7 +13,7 @@
 
 <div class="heterodox">
   <%= inline_svg "heterodox.svg" , id: 'heterodox-logo' %>
-  <p><%= t ".heterodox" %></p>
+  <p id="heterodox-text"><%= t ".heterodox" %></p>
   <p><%=link_to t('.heterodox-link') , 'http://www.heterodox.design' , target: "_blank" %></p>
 </div>
 

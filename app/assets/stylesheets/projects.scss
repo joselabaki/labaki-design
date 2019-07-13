@@ -4,31 +4,36 @@
 
 @import 'variables';
 
-
-#heterodox-logo{
-  width: 15%;
-  &:hover {path{fill:#2C2C2C}}
-  path{fill: #F6F6F6;}}
-
 .new-project{
   background-color: red;
 }
 
 
+.single-project{display: inline-flex;align-items: center;}
 
-
-.project-info{a{text-decoration: none}display: inline-grid; grid-template-columns: 1fr 1fr; align-items: center;}
 
 .project-title{
+justify-self:start;
 font-family: 'Soyuz-Custom';
 text-decoration: none;
 font-size: 1.5em;
-color: darkblue;
-margin: 10px auto;
+margin: 8px auto;
+a{color: $main-color; text-decoration: none}
 }
-.subcat{margin-left: 30px; font-family: 'Untitled Sans'; font-size: 1em}
-hr{
-  color: darkblue;
-  margin-top:0px;
+.subcat{margin-left: 20px; font-family: 'Untitled Sans'; font-size: 1em; color: $main-color;}
+hr{ color: $main-color; margin-top:0px;}
 
-}
+  ///////HETERODOX EASTER EGG////////////
+
+  .heterodox{
+    opacity: .2;
+    margin-top: 30px;
+    color: $hx-black;
+    width: 30%;
+    font-size: .9em;
+    a{text-decoration: none; color: $hx-black}
+    #heterodox-logo{width:50%; path{fill: $hx-black;}}
+    #heterodox-text{margin-top: 5px;}
+    &:hover{ opacity: 1;
+      a{&:hover{border-bottom: 2px solid $hx-black ; padding-bottom: 5px;}
+    }}}

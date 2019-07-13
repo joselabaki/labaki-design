@@ -5,10 +5,11 @@
 
   @font-face  {
     font-family: 'Soyuz-Custom';
-    src:font-url('Soyuz-Grotesk-Bold.otf'); 
+    src:font-url('Soyuz-Grotesk-Bold.otf');
   }
   @font-face {
       font-family: 'Untitled Sans';
-      src:font-url('UntitledSansWeb.ttf');
+      src:font-url('UntitledSansWeb.ttf');}
 
-  }
+  $main-color: #101D6B;
+  $hx-black: #3D0C02;

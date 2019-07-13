@@ -17,15 +17,13 @@
 
 
 html{height: 100%;}
-body{
-  margin: 0;
-  padding: 0;
-}
+body{margin: 0;padding: 0;}
+p{font-family: 'Untitled Sans'}
 
 .main-container{
   width: 1200px;
   margin: 0 auto;
-  margin-top: 75px;
+  margin-top:55px;
 }
 
 
@@ -36,10 +34,10 @@ body{
     left: -1px;
     top:0px;
     padding-bottom: 20px;
-    padding-top: 50px;
+    margin-top: 60px;
     position: sticky;
     display: inline;
-    border-bottom: 1px solid red;
+  //  border-bottom: 1px solid red;
     display: grid;
     grid-template-columns: 20% 20% auto;
     background-color: white;
@@ -50,22 +48,22 @@ body{
 
 
 .links-nav{
-  font-family: 'Syne';
+  font-family: 'Untitled Sans';
   text-transform: uppercase;
   font-size: .9em;
   display:grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
   align-items: center;
   justify-items: end;
-  width: 70%;
+  width: 50%;
   justify-self: end;
-  color: darkblue;
-  a{text-decoration: none; color: darkblue}
+  color: $main-color;
+  a{text-decoration: none; color: $main-color}
+  // margin-right: 25px;
+
 }
 
-.nav-inner{position: absolute; display: none;}
+.nav-inner{position: absolute; display: none; background-color: white;
+p{padding-bottom: 5px; border-bottom: 1px dotted $main-color; }}
 .projects-nav{padding: 5px; cursor: pointer;}
-
-p{
-  font-family: 'Untitled Sans'
-}

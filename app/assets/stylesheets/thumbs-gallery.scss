@@ -1,15 +1,23 @@
 .thumbails-index{
 display: none;
-img{width: 200px}
-}
-#les-merveilles-de-la-mer-thumb{
-  position: absolute;
-  top:400px;
-  left:400px;
+img{width: 400px}
 }
 
 #le-livre-de-sophie-thumb{
   position: absolute;
+  top:150px;
+  left:500px;
+}
+
+
+#the-wonders-of-the-sea-thumb{
+  position: absolute;
+  top:200px;
+  left:600px;
+}
+
+#les-merveilles-de-la-mer-thumb{
+  position: absolute;
   top:300px;
-  left:300px;
+  left:200px;
 }
