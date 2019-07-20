@@ -2,10 +2,10 @@
 
 <% @projects.each do |p| %>
 
-<div class="single-project <%= p.title.to_s.parameterize%>">
+<div class="single-project <%= p.title.parameterize%>">
       <div class="project-info"><div class="project-title"> <%= link_to project_path(p) do %> <%= p.title %><%end%> </div></div>
       <div class="subcat"><!-- <%= p.category %> - --> <%= p.subcategory %> </div>
-      <% p.thumbnails.each do |th| %><div class="thumbails-index" id= "<%=p.title.to_s.parameterize%>-thumb" ><%= image_tag (th.url)%></div><% end %>
+      <% p.thumbnails.each do |th| %><div class="thumbails-index" id= "<%=p.title.parameterize%>-thumb" ><%= image_tag (th.url)%></div><% end %>
 </div>
 <hr class="separateur">
 
@@ -20,12 +20,12 @@
 
 <% @projects.each do |p| %>
  <script type="text/javascript">
-$('.<%=p.title.to_s.parameterize %>').hover(function(){
-$('#<%=p.title.to_s.parameterize%>-thumb').fadeIn()});
-$('.<%=p.title.to_s.parameterize %>').mouseleave(function(){
-$('#<%=p.title.to_s.parameterize%>-thumb').fadeOut()});
+$('.<%=p.title.parameterize %>').hover(function(){
+$('#<%=p.title.parameterize%>-thumb').fadeIn()});
+$('.<%=p.title.parameterize %>').mouseleave(function(){
+$('#<%=p.title.parameterize%>-thumb').fadeOut()});
 <% if p.nouveau? %>
-$('.<%=p.title.to_s.parameterize %>').addClass('new-project')
+$('.<%=p.title.parameterize %>').addClass('new-project')
 <%end%>
 </script>
 <%end %>

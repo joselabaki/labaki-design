@@ -1,9 +1,16 @@
 <% provide(:title, @project.title) %>
 
-<h1><%= @project.title%></h1>
-<h3><%= @project.category %></h3>
-<h2><%= @project.body%></h2>
-<h3><%= @project.description %></h3>
+<div id="top"></div>
+<% @project.thumbnails.each do |p| %>
+<div class="show-project-thumb"> <%= image_tag p.url %></div>
+<%end%>
+
+<p class="show-project-title"><%= @project.title%></p>
+<p><%= @project.subcategory %></p>
+<p class="show-project-body"><%= @project.body.html_safe%></p>
+<div class="image-block">
 <% @project.images.each do |i| %>
-<%= image_tag (i.url)%>
+<div><%= image_tag (i.url)%></div>
 <% end %>
+</div>
+ <div onclick="topFunction()" id="myBtn" title="Top" class="up-top"><div class="up-arrow"><%= inline_svg 'up-arrow.svg'%></div>  </div> 

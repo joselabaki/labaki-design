@@ -14,13 +14,13 @@
 
 .project-title{
 justify-self:start;
-font-family: 'Soyuz-Custom';
+font-family: 'Soyuz-Custom' , 'Untitled Sans' , sans-serif;
 text-decoration: none;
-font-size: 8em;
+font-size: 4em;
 margin: 8px auto;
 a{color: $main-color; text-decoration: none}
 }
-.subcat{margin-left: 20px; font-family: 'Untitled Sans'; font-size: 1em; color: $main-color;}
+.subcat{margin-left: 20px; font-family: 'Untitled Sans' , sans-serif;; font-size: 1em; color: $main-color;}
 hr{ color: $main-color; margin-top:0px;}
 
   ///////HETERODOX EASTER EGG////////////
@@ -37,3 +37,46 @@ hr{ color: $main-color; margin-top:0px;}
     &:hover{ opacity: 1;
       a{&:hover{border-bottom: 2px solid $hx-black ; padding-bottom: 5px;}
     }}}
+
+////////////////////////////SHOW//////
+.show-project-title{
+  font-family: 'Soyuz-Custom' , 'Untitled Sans' , sans-serif;
+  font-size: 5em;
+  color: $main-color;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+}
+
+.show-project-body{
+  font-family: 'Untitled Sans' , sans-serif;
+  width: 50%;
+  margin: 40px 0px;
+  padding: 40px 0px;
+  border-top: 1px dotted $main-color;
+  border-bottom: 1px dotted $main-color;
+}
+
+.show-project-thumb{
+  margin-bottom: 30px;
+}
+
+#myBtn {
+  width:20px;
+  height: 20px;
+  padding: 20px;
+  border-radius: 100%;
+  border: 1px solid $main-color;
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 350px; /* Place the button at the bottom of the page */
+  right: 350px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  opacity: .5;
+  &:hover{opacity: 1;  background-color: $main-color}
+  }
+
+.up-top{
+  svg{padding-top: 5px; path{fill: $main-color;}}
+  &:hover{svg{path{fill: white;}}}
+}
