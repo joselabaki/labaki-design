@@ -1,9 +1,11 @@
 en:
+
   about: 'About'
   home: 'Home'
   all-projects: 'All'
   graphic-design: 'Graphic Design'
   industrial-design: 'Industrial Design'
+  record: 'Title (English)'
   projects:
     index:
       page-name: 'Projects'

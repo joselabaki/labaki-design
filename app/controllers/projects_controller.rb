@@ -3,9 +3,9 @@ class ProjectsController < ApplicationController
 
   def index
     if params[:category]
-      @projects = Project.where(:category => params[:category])
+      @projects = Project.where(:category => params[:category]).order(created_at: :desc)
     else
-    @projects = Project.all
+    @projects = Project.all.order(created_at: :desc)
   end
 end
   def new

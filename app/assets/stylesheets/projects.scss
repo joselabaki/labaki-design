@@ -4,9 +4,7 @@
 
 @import 'variables';
 
-.new-project{
-  background-color: red;
-}
+
 
 
 .single-project{display: inline-flex;align-items: center;}
@@ -26,7 +24,7 @@ hr{ color: $main-color; margin-top:0px;}
   ///////HETERODOX EASTER EGG////////////
 
   .heterodox{
-    opacity: .04;
+    opacity: .1;
     margin-top: 30px;
     color: $hx-black;
     width: 30%;
@@ -79,4 +77,9 @@ hr{ color: $main-color; margin-top:0px;}
 .up-top{
   svg{padding-top: 5px; path{fill: $main-color;}}
   &:hover{svg{path{fill: white;}}}
+}
+
+.new-project{
+color: $new-project;
+a{color: $new-project;}
 }

@@ -17,24 +17,24 @@
 
 
       <p>
-        <%= form.label :title %><br>
+        <%= form.label t('record')%><br>
         <%= form.text_area :title ,size: "30x1"%>
       </p>
       <p>
       <%= form.label :description %><br>
-      <%= form.text_area :description, size: "30x15" %>
+      <%= form.text_area :description, size: "50x17" %>
     </p>
 
       <p>
         <%= form.label :body %><br>
-        <%= form.text_area :body , size: "10x10" %>
+        <%= form.text_area :body , size: "50x17" %>
       </p>
 
       <p>    <%= form.label :category %><br>
         <%=form.select :category , ['graphic' , 'industrial'] %></p>
           <p>
-            <p>    <%= form.label :subcategory %><br>
-              <%= form.text_area :subcategory %></p>
+            <p> <%= form.label :subcategory %><br>
+              <%= form.text_area :subcategory,size: "30x1" %></p>
                 <p>
   <p>    <%= form.label :images %><br>
     <%= form.file_field :images, multiple: true %></p>
@@ -46,9 +46,6 @@
         <p>  <%= form.label :nouveau %><br>
           <%= form.check_box :nouveau%>
         </p>
-
-
-
 
         <%= form.submit %>
       </p>

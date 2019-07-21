@@ -1,12 +1,14 @@
 fr:
+
   about: 'A Propos'
   home: 'Accceuil'
   all-projects: 'Tous'
   graphic-design: 'Design Graphique'
   industrial-design: 'Design Industriel'
+  record: 'Titre (Francais)'
   projects:
     index:
       page-name: 'Les projects'
       heterodox: >
-           Heterodox est le double maléfique de ce studio. Ses projets sont critiques, satiriques, érotiques ou esthétiques. Ils s'affranchissent des taboos, des inhibitions et des vérités inavouées. Pour Heterodox, le design est synonyme d'expression et d'aternative 
+           Heterodox est le double maléfique de ce studio. Ses projets sont critiques, satiriques, érotiques ou esthétiques. Ils s'affranchissent des taboos, des inhibitions et des vérités inavouées. Pour Heterodox, le design est synonyme d'expression et d'aternative
       heterodox-link: 'Montrez-moi heterodox'
