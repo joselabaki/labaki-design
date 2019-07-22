@@ -16,21 +16,19 @@
       <div class="logo">Le LOGO</div>
       <div></div>
       <div class="links-nav">
-      <div class="projects-nav">
-      <span id="project-span">Projects</span>
-    <div class="nav-inner">
+        <div class="projects-nav">
+          <span id="project-span"><%= link_to t('the-projects'), projects_path %></span>
+          <div class="nav-inner">
+              <p> <%= link_to t('all-projects'), projects_path %></p>
+              <p><%= link_to t('graphic-design'), projects_path(:category => "graphic") %></p>
+              <p> <%= link_to t('industrial-design'), projects_path(:category => "industrial") %></p>  </div>
 
-        <p> <%= link_to t('all-projects'), projects_path %></p>
-        <p><%= link_to t('graphic-design'), projects_path(:category => "graphic") %></p>
-        <p> <%= link_to t('industrial-design'), projects_path(:category => "industrial") %></p>  </div>
+            </div>
 
-</div>
-
-      <div class="static">
-        <%= link_to t('about') , about_path %></div>
-      <div>  <%= link_to "Contact" , contact_path %></div>
-      <div class="languages"><%= link_to_unless_current 'EN' , locale: 'en' %> | <%= link_to_unless_current 'FR' , locale: 'fr' %></div>
-    </div>
+            <div class="static">
+              <%= link_to t('about') , about_path %></div>
+              <div>  <%= link_to "Contact" , contact_path%></div>
+              <div class="languages"><%= link_to 'EN' , locale: 'en' %> | <%= link_to 'FR' , locale: 'fr' %></div></div>
 
 </div>
 <div class="main-container">

@@ -60,13 +60,19 @@ p{font-family: 'Untitled Sans', sans-serif; color: $sec-color;}
   width: 50%;
   justify-self: end;
   color: $main-color;
-  a{text-decoration: none; color: $main-color}
-  // margin-right: 25px;
+  a{text-decoration: none; color: $main-color;
+    &:hover{border-bottom: 1px solid $main-color;padding-bottom: 5px;}
+  }
 
 }
 
-.nav-inner{position: absolute; display: none; background-color: white;
-p{padding-bottom: 5px; border-bottom: 1px dotted $main-color; }}
+.nav-inner{position: absolute; display: none;}
 .projects-nav{padding: 5px; cursor: pointer;}
 
+
+.active{
+  padding-bottom: 5px;
+  border-bottom: 1px solid $main-color;
+
+}
 ///////scrollTop
