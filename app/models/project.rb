@@ -12,11 +12,11 @@ class Project < ApplicationRecord
 
 
       def next
-        Project.where("id < ?", id).limit(1).first
+        Project.where("id > ?", id).limit(1).first
       end
 
       def previous
-        Project.where("id > ?", id).limit(1).first
+        Project.where("id < ?", id).limit(1).first
       end
 
 
