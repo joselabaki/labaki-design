@@ -75,4 +75,11 @@ p{font-family: 'Untitled Sans', sans-serif; color: $sec-color;}
   border-bottom: 1px solid $main-color;
 
 }
+
+.active-lang{
+opacity: 0.4;
+}
+.languages{a{
+  &:hover{border: none;}}
+}
 ///////scrollTop
