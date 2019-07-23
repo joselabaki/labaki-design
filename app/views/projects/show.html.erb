@@ -13,4 +13,13 @@
 <div><%= image_tag (i.url)%></div>
 <% end %>
 </div>
- <div onclick="topFunction()" id="myBtn" title="Top" class="up-top"><div class="up-arrow"><%= inline_svg 'up-arrow.svg'%></div>  </div> 
+ <div onclick="topFunction()" id="myBtn" title="Top" class="up-top"><div class="up-arrow"><%= inline_svg 'up-arrow.svg'%></div>  </div>
+
+<div class="in-project-nav">
+ <% if @project.previous%>
+     <%= link_to @project.previous do %><div class="prev-project-name">Previous : <%= @project.previous.title%></div><% end %>
+ <% else %><div></div> <%end%>
+ <% if @project.next%>
+     <%= link_to @project.next do %><div class="prev-project-name">Next : <%= @project.next.title%></div><% end %>
+ <% else %><div></div> <%end%>
+</div>

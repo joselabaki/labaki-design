@@ -8,4 +8,18 @@ class Project < ApplicationRecord
 
   translates :title , :body , :description , :subcategory
 
+
+
+
+      def next
+        Project.where("id > ?", id).limit(1).first
+      end
+
+      def previous
+        Project.where("id < ?", id).limit(1).first
+      end
+
+
+
+
 end
