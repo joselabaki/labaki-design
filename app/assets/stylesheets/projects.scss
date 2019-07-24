@@ -56,6 +56,7 @@ hr{ color: $main-color; margin-top:0px;}
 
 .show-project-thumb{
   margin-bottom: 30px;
+
 }
 
 #myBtn {
@@ -66,8 +67,8 @@ hr{ color: $main-color; margin-top:0px;}
   border: 1px solid $main-color;
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 350px; /* Place the button at the bottom of the page */
-  right: 350px; /* Place the button 30px from the right */
+  top: 500px; /* Place the button at the bottom of the page */
+  right: 100px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   cursor: pointer; /* Add a mouse pointer on hover */
   opacity: .5;
@@ -88,3 +89,18 @@ a{color: $new-project;}
 .in-project-nav{
   margin: 60px 0px;
 }
+
+.show-project{
+display: grid;
+
+}
+
+.images-block{
+  img{
+    width: 1000px;
+    margin-bottom: 25px;
+  }
+}
+
+
+//////////////// SHOW PROJECT ////
