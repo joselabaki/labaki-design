@@ -3,7 +3,7 @@
 <div class="show-project">
 
 <div class="project-texts">
-  <p class="show-project-title"><%= @project.title%></p>
+  <p class="show-project-title" id="project-title"><%= @project.title%></p>
   <p><%= @project.subcategory %></p>
   <p class="show-project-body"><%= @project.body.html_safe%></p>
 </div>
@@ -18,14 +18,15 @@
 
 <div class="in-project-nav">
  <% if @project.previous%>
- <%= link_to @project.previous do %><div class="prev-project-name">Previous : <%= @project.previous.title%></div><% end %>
+ <div class="prev-project-name">
+ <%= link_to @project.previous do %><%= @project.previous.title%></div><% end %>
  <% else %><div></div> <%end%>
- <span><%= link_to t('the-projects'), projects_path %></span>
+
+ <div id="back-home"><%= link_to t('the-projects'), projects_path %></div>
  <% if @project.next%>
-     <%= link_to @project.next do %><div class="prev-project-name">Next : <%= @project.next.title%></div><% end %>
+ <div class="next-project-name">
+     <%= link_to @project.next do %> <%= @project.next.title%></div><% end %>
  <% else %><div></div> <%end%>
-</div>
+</div><!-- in project-nav -->
 
 </div><!-- Show Project -->
-
-<div onclick="topFunction()" id="myBtn" title="Top" class="up-top"><div class="up-arrow"><%= inline_svg 'up-arrow.svg'%></div>  </div>

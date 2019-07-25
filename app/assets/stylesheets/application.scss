@@ -28,20 +28,24 @@ p{font-family: 'Untitled Sans', sans-serif; color: $sec-color;}
 
 
 .navigation{
-    width: 1201px;
+    width: 1200px;
     margin: 0 auto;
     right: 0;
     left: -1px;
     top:0px;
     padding-bottom: 20px;
-    //margin-top: 60px;
     padding-top: 60px;
     position: sticky;
     display: inline;
-  //  border-bottom: 1px solid red;
     display: grid;
     grid-template-columns: 20% 20% auto;
     background-color: white;
+    border-bottom: none;
+    -webkit-transition: padding .2s linear;
+    -moz-transition: padding .2s linear;
+    -ms-transition: padding .2s linear;
+    -o-transition: padding .2s linear;
+     transition: padding .2s linear;
 }
 
 .logo{align-self: center;}
@@ -79,9 +83,9 @@ p{font-family: 'Untitled Sans', sans-serif; color: $sec-color;}
 .active-lang{
 opacity: 0.4;
 }
-.languages{a{
-  &:hover{border: none;}}
+.languages a{
+  &:hover{border: none;}
 }
 ///////scrollTop
 
-.links-scroll{border-bottom: 2px solid $main-color;}
+.links-scroll{padding: 20px 0px;}
