@@ -20,9 +20,9 @@
 
 <% @projects.each do |p| %>
  <script type="text/javascript">
-$('.<%=p.title.parameterize %>').hover(function(){
+$('.<%=p.title.parameterize %> a ').hover(function(){
 $('#<%=p.title.parameterize%>-thumb').fadeIn()});
-$('.<%=p.title.parameterize %>').mouseleave(function(){
+$('.<%=p.title.parameterize %> a ').mouseleave(function(){
 $('#<%=p.title.parameterize%>-thumb').fadeOut()});
 <% if p.nouveau? %>
 $('.<%=p.title.parameterize %>').addClass('new-project')

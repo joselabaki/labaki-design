@@ -2,7 +2,7 @@
 
 $( document ).on('turbolinks:load', function() {
 
-$('#project-span').hover(
+$('#project-span').click(
   function() {
 $('.nav-inner').slideDown()})
 

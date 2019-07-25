@@ -43,12 +43,7 @@ p{font-family: 'Untitled Sans', sans-serif; color: $sec-color;}
     display: grid;
     grid-template-columns: 20% 20% auto;
     background-color: white;
-    border-bottom: none;
-  //-webkit-transition: padding .2s linear;
-  //  -moz-transition: padding .2s linear;
-  //  -ms-transition: padding .2s linear;
-    //-o-transition: padding .2s linear;
-     //transition: padding .2s linear;
+
 }
 
 .logo{align-self: center;}
@@ -88,5 +83,15 @@ opacity: 0.4;
 }
 .languages a{
   &:hover{border: none;}
+}
+
+.page-footer{
+  width: 100%;
+  font-size: 10px;
+  margin-top: 50px;
+  bottom: 0;
+  padding-bottom: 5px;
+  text-align: center;
+
 }
 ///////scrollTop

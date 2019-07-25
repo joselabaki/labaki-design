@@ -5,7 +5,7 @@
 @import 'variables';
 
 
-
+///////////INDEX////////
 
 .single-project{display: inline-flex;align-items: center;border-bottom: 1px dotted $main-color; width: 100%;
 }
@@ -35,7 +35,7 @@ hr{ color: $main-color; margin-top:0px;}
     #heterodox-logo{width:50%; path{fill: $hx-black;}}
     #heterodox-text{margin-top: 5px;}
     &:hover{ opacity: 1;
-      a{&:hover{border-bottom: 2px solid $hx-black ; padding-bottom: 5px;}
+    a{&:hover{border-bottom: 2px solid $hx-black ; padding-bottom: 5px;}
     }}}
 
 ////////////////////////////SHOW//////
@@ -56,56 +56,24 @@ hr{ color: $main-color; margin-top:0px;}
   border-bottom: 1px dotted $main-color;
 }
 
-.show-project-thumb{
-  margin-bottom: 30px;
+.show-project-thumb{margin-bottom: 30px;}
 
-}
-
-#myBtn {
-  width:20px;
-  height: 20px;
-  padding: 20px;
-  border-radius: 100%;
-  border: 1px solid $main-color;
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  top: 500px; /* Place the button at the bottom of the page */
-  right: 100px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  opacity: .5;
-  &:hover{opacity: 1;  background-color: $main-color}
-  }
-
-.up-top{
-  svg{padding-top: 5px; path{fill: $main-color;}}
-  &:hover{svg{path{fill: white;}}}
-}
-
+//// NEW PROJECT ////
 .new-project{
 color: $new-project;
 a{color: $new-project;}
 }
+ //////////////
+
+
+////////////IN PROJECT NAV /////////////////
 
 #back-home{text-align: center; font-family: 'Untitled Sans' , sans-serif;}
+.show-project{display: grid;}
+.images-block{img{width: 1000px;margin-bottom: 25px;}}
 
 .in-project-nav{
   margin: 60px 0px;
-}
-
-.show-project{
-display: grid;
-
-}
-
-.images-block{
-  img{
-    width: 1000px;
-    margin-bottom: 25px;
-  }
-}
-
-.in-project-nav{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   a{
@@ -130,5 +98,4 @@ justify-items: end;align-items: center;
 .arrow-inner{width:50px;}
 #arrow-inner-prev{transform: rotate(180deg); padding-left: 30px; fill: $main-color}
 #arrow-inner-next{padding-left: 30px; fill: $main-color}
-
-//////////////// SHOW PROJECT ////
+/////////////////
