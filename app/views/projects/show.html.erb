@@ -17,21 +17,30 @@
 
 
 <div class="in-project-nav">
- <% if @project.previous%>
- <div class="prev-project-name">
-   <div><%= inline_svg "arrow-inner.svg" , class:'arrow-inner-left' %></div>
- <div><%= link_to @project.previous do %><%= @project.previous.title%></div></div><% end %>
+  <% if @project.previous%><%= link_to @project.previous do %>
+    <div class="in-project prev-project">
+    <div> <%= inline_svg "arrow-inner.svg" , id: "arrow-inner-prev" , class: "arrow-inner"%></div>
+    <div> <%= @project.previous.title %></div> <!-- projet-title-->
+  </div> <!-- prev-project -->
+  <%end%> <!-- end of do -->  <%else%> <div></div><%end%> <!-- end of if -->
 
-<% else %><div></div> <%end%>
- <div id="back-home">Home</div>
- <% if @project.next%>
 
- <div class="next-project-name">
-    <div><%= link_to @project.next do %><%= @project.next.title%><% end %></div>
-      <div><%= inline_svg "arrow-inner.svg" , class:'arrow-inner-right' %></div>
-    </div>
 
- <% else %><div></div> <%end%>
-</div><!-- in project-nav -->
+  <div class="back-home"><%= link_to t("the-projects"), projects_path %> </div>
+
+<% if @project.next%><%= link_to @project.next do %>
+<div class="in-project next-project">
+<div> <%= @project.next.title %></div>
+  <div> <%= inline_svg "arrow-inner.svg" , id: "arrow-inner-next" , class: "arrow-inner"%></div>
+</div> <!-- next-project -->
+
+
+<%end%> <%end%>
+
+
+
+
+
+</div> <!-- in project-nav -->
 
 </div><!-- Show Project -->

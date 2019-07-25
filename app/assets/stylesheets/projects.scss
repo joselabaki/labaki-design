@@ -107,25 +107,28 @@ display: grid;
 
 .in-project-nav{
   display: grid;
-  grid-template-columns: repeat(3 , 1fr);
-
-    .next-project-name{display:grid; grid-template-columns: auto 1fr ;align-items: center;&:hover{svg{fill:$high-light}}; justify-items: end; justify-self: end; }
-    .prev-project-name{display:inline-flex;;align-items: center; &:hover{svg{fill:$high-light}}}
-
-    a{text-decoration: none; font-family: 'Soyuz-Custom', 'Untitled Sans' , sans-serif;
-      text-transform: capitalize;
-      font-size: 1.1em;
-      color:$main-color;
-      &:hover{color: $high-light;}
-    }
+  grid-template-columns: repeat(3, 1fr);
+  a{
+    font-family: 'Soyuz-Custom' , 'Untitled Sans' , sans-serif;
+    text-decoration: none;
+    color: $main-color;
+    font-size: 1.1em;
+    text-align: center;
+  }
 }
 
-.arrow-inner-right{ fill:$main-color; width: 50px; padding-left: 30px;}
-.arrow-inner-left{ padding-left: 30px;width:50px; fill:$main-color;transform: rotate(180deg);}
+.next-project{display:grid; grid-template-columns: 1fr auto;
+justify-items: end;align-items: center;
+&:hover{color: $highlight; path{fill:$highlight}}
+
+}
+.prev-project{display:grid; grid-template-columns: auto 1fr;justify-items: start;align-items: center;
+&:hover{color: $highlight; path{fill:$highlight}}
+}
+
+.back-home{justify-self: center}
+.arrow-inner{width:50px;}
+#arrow-inner-prev{transform: rotate(180deg); padding-left: 30px; fill: $main-color}
+#arrow-inner-next{padding-left: 30px; fill: $main-color}
 
 //////////////// SHOW PROJECT ////
-
-#back-home{
-  path{
-  fill: red;
-}}

@@ -18,14 +18,4 @@ $( document ).on('turbolinks:load', function() {
 });
 
 
-
-
-$(window).scroll(function() {
-   if ($(this).scrollTop() > 150){
-      $('.navigation').addClass("links-scroll");
-   } else {
-      $('.navigation').removeClass("links-scroll");
-   }
-});
-
 });
