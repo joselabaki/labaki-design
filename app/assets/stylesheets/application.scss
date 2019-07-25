@@ -17,9 +17,12 @@
 
 
 html{height: 100%;}
-body{margin: 0;padding: 0; scroll-behavior: smooth;}
-p{font-family: 'Untitled Sans', sans-serif; color: $sec-color;}
+body{
+  margin: 0;padding: 0;
+  scroll-behavior: smooth;}
 
+
+p{font-family: 'Untitled Sans', sans-serif; color: $sec-color;}
 .main-container{
   width: 1200px;
   margin: 0 auto;
@@ -41,11 +44,11 @@ p{font-family: 'Untitled Sans', sans-serif; color: $sec-color;}
     grid-template-columns: 20% 20% auto;
     background-color: white;
     border-bottom: none;
-    -webkit-transition: padding .2s linear;
-    -moz-transition: padding .2s linear;
-    -ms-transition: padding .2s linear;
-    -o-transition: padding .2s linear;
-     transition: padding .2s linear;
+  //-webkit-transition: padding .2s linear;
+  //  -moz-transition: padding .2s linear;
+  //  -ms-transition: padding .2s linear;
+    //-o-transition: padding .2s linear;
+     //transition: padding .2s linear;
 }
 
 .logo{align-self: center;}

@@ -107,19 +107,19 @@ display: grid;
 .in-project-nav{
   display: grid;
   grid-template-columns: repeat(3 , 1fr);
-    .next-project-name{display:inline-flex; justify-content: end;}
-    #back-home{display:inline-flex;justify-content: center;};
-    a{text-decoration: none; font-family: 'Untitled Sans' , sans-serif;
+
+    .next-project-name{display:grid; grid-template-columns: auto 1fr ;align-items: center;&:hover{svg{fill:$high-light}}; justify-items: end; justify-self: end; }
+    .prev-project-name{display:inline-flex;;align-items: center; &:hover{svg{fill:$high-light}}}
+
+    a{text-decoration: none; font-family: 'Soyuz-Custom', 'Untitled Sans' , sans-serif;
       text-transform: capitalize;
       font-size: 1.1em;
       color:$main-color;
       &:hover{color: $high-light;}
     }
-
-
-
 }
 
-
+.arrow-inner-right{ fill:$main-color; width: 50px; padding-left: 30px;}
+.arrow-inner-left{ padding-left: 30px;width:50px; fill:$main-color;transform: rotate(180deg);}
 
 //////////////// SHOW PROJECT ////

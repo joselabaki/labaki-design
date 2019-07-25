@@ -19,13 +19,18 @@
 <div class="in-project-nav">
  <% if @project.previous%>
  <div class="prev-project-name">
- <%= link_to @project.previous do %><%= @project.previous.title%></div><% end %>
- <% else %><div></div> <%end%>
+   <div><%= inline_svg 'arrow-inner' , class:'arrow-inner-left' %></div>
+ <div><%= link_to @project.previous do %><%= @project.previous.title%></div></div><% end %>
 
- <div id="back-home"><%= link_to t('the-projects'), projects_path %></div>
+<% else %><div></div> <%end%>
+ <div id="back-home"></div>
  <% if @project.next%>
+
  <div class="next-project-name">
-     <%= link_to @project.next do %> <%= @project.next.title%></div><% end %>
+    <div><%= link_to @project.next do %><%= @project.next.title%><% end %></div>
+      <div><%= inline_svg 'arrow-inner' , class:'arrow-inner-right' %></div>
+    </div>
+
  <% else %><div></div> <%end%>
 </div><!-- in project-nav -->
 
