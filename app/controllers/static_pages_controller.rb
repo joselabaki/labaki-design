@@ -4,4 +4,9 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+  def construction
+  render :layout => false
+  end
+
 end

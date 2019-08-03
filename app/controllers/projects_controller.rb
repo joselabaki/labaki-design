@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  before_action :authenticate_admin!, except: [:show , :index]
+  before_action :authenticate_admin!
 
   def index
     if params[:category]

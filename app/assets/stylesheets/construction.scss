@@ -1,0 +1,53 @@
+@import 'variables';
+.page-footer{
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   text-align: center;
+   font-size: 10px;
+   background-color: white;
+   font-family: 'Untitled Sans' , sans-serif;
+}
+
+.construction{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+.inner-cons{
+  display: grid;
+  justify-items:center;
+
+
+}
+
+#construction{
+  font-family: 'Soyuz-Custom' , 'Untitled Sans' , sans-serif;
+  font-size: 3em;
+  color: $main-color;
+  margin: 0;
+}
+#construction-mobile{
+  font-family: 'Soyuz-Custom' , 'Untitled Sans' , sans-serif;
+  font-size: 2em;
+  color: $main-color;
+  margin: 0;
+}
+
+
+
+#const-conact{a{
+  font-family: 'Untitled Sans';
+  font-size: 1em;
+  color: $sec-color;
+  text-decoration: none;
+  &:hover{
+    padding-bottom: 5px;
+    border-bottom: 1px solid $sec-color;
+
+  }
+}}
