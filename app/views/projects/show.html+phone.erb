@@ -1,0 +1,45 @@
+<% provide(:title, @project.title) %>
+<div class="show-project">
+
+<div class="project-texts">
+  <p class="show-project-title" id="project-title"><%= @project.title%></p>
+  <p><%= @project.subcategory %></p>
+  <p class="show-project-body"><%= @project.body.html_safe%></p>
+</div>
+
+
+<div class="images-block">
+<% @project.images.each do |i| %>
+<div><%= image_tag (i.url)%></div>
+<% end %>
+</div>
+
+
+<div class="in-project-nav">
+  <% if @project.previous%><%= link_to @project.previous do %>
+    <div class="in-project prev-project">
+    <div> <%= inline_svg "arrow-inner.svg" , id: "arrow-inner-prev" , class: "arrow-inner"%></div>
+    <div> <%= @project.previous.title %></div> <!-- projet-title-->
+  </div> <!-- prev-project -->
+  <%end%> <!-- end of do -->  <%else%> <div></div><%end%> <!-- end of if -->
+
+
+
+  <div class="back-home"><%= link_to t("the-projects"), projects_path %> </div>
+
+<% if @project.next%><%= link_to @project.next do %>
+<div class="in-project next-project">
+<div> <%= @project.next.title %></div>
+  <div> <%= inline_svg "arrow-inner.svg" , id: "arrow-inner-next" , class: "arrow-inner"%></div>
+</div> <!-- next-project -->
+
+
+<%end%> <%end%>
+
+
+
+
+
+</div> <!-- in project-nav -->
+
+</div><!-- Show Project -->

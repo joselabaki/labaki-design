@@ -1,3 +1,5 @@
+@import 'variables';
+
 .navigation-mobile{
   width: 100%;
   margin-top: 30px;
@@ -6,9 +8,33 @@
 .main-container-mobile{
   margin-top: 50px;
   width: 100%;
-padding-left: 10px;
+  padding-left: 10px;
 }
 
 .links-nav-mobile{
   display: none;
 }
+
+///////////////////////////////// Index ////
+
+.project-title-mobile{
+  justify-self:start;
+  font-family: 'Soyuz-Custom' , 'Untitled Sans' , sans-serif;
+  text-decoration: none;
+  font-size: 2em;
+  margin: 8px auto;
+  a{color: $main-color; text-decoration: none}
+}
+
+.heterodox-mobile{
+  opacity: .1;
+  margin-top: 50px;
+  color: $hx-black;
+  width: 80%;
+  font-size: .9em;
+  a{text-decoration: none; color: $hx-black}
+  #heterodox-logo{width:50%; path{fill: $hx-black;}}
+  #heterodox-text{margin-top: 5px;}
+  &:hover{ opacity: 1;
+  a{&:hover{border-bottom: 2px solid $hx-black ; padding-bottom: 5px;}
+  }}}
