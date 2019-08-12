@@ -1,11 +1,10 @@
 <% provide(:title, t('home')) %>
-
 <% @projects.each do |p| %>
 
-<div class="single-project <%= p.title.parameterize%>">
-      <div class="project-info"><div class="project-title-mobile"> <%= link_to project_path(p) do %> <%= p.title %><%end%> </div></div>
+<div class="single-project-mobile <%= p.title.parameterize%>">
+      <div class="project-info"><div class="project-title-mobile"> <%= p.title %></div></div>
       <div class="subcat"><%= p.subcategory %> </div>
-      <% p.thumbnails.each do |th| %><div class="thumbails-index" id= "<%=p.title.parameterize%>-thumb" ><%= image_tag (th.url)%></div><% end %>
+      <% p.thumbnails.each do |th| %><div class="thumbails-index-mobile invisible" id= "<%=p.title.parameterize%>-thumb-mobile" ><%= image_tag (th.url)%></div><% end %>
 </div>
 
 <%end%>
@@ -16,15 +15,33 @@
   <p><%=link_to t('.heterodox-link') , 'http://www.heterodox.design' , target: "_blank" %></p>
 </div>
 
+<script type="text/javascript" data-turbolinks-eval=false>
 
 <% @projects.each do |p| %>
- <script type="text/javascript">
-$('.<%=p.title.parameterize %> a ').hover(function(){
-$('#<%=p.title.parameterize%>-thumb').fadeIn()});
-$('.<%=p.title.parameterize %> a ').mouseleave(function(){
-$('#<%=p.title.parameterize%>-thumb').fadeOut()});
+  $('.single-project-mobile.<%=p.title.parameterize%>').click(function(){
+    console.log("clicked")
+  $('.thumbails-index-mobile').removeClass('visible', 1000 )
+  $('#<%=p.title.parameterize%>-thumb-mobile').addClass('visible', 1000);
+
+  })
+  $(document).click(function(event) {
+    if (!$(event.target).closest(".single-project-mobile.<%=p.title.parameterize%>").length) {
+      $("body").find("#<%=p.title.parameterize%>-thumb-mobile").removeClass('visible', 1000);
+    }
+  });
+
+
+
+
+
 <% if p.nouveau? %>
-$('.<%=p.title.parameterize %>').addClass('new-project')
+$('.<%=p.title.parameterize %>').addClass('new-project');
 <%end%>
+<%end%>
+
+$('.heterodox-mobile').click(function(){
+  console.log("heterodox");
+  $(this).toggleClass('heterodox-mobile-active')
+});
+
 </script>
-<%end %>

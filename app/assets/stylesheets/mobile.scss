@@ -3,6 +3,8 @@
 .navigation-mobile{
   width: 100%;
   margin-top: 30px;
+  padding-left: 10px;
+
 }
 
 .main-container-mobile{
@@ -16,25 +18,30 @@
 }
 
 ///////////////////////////////// Index ////
-
+.single-project-mobile{display: inline-flex;align-items: center;border-bottom: 1px dotted $main-color; width: 95%;
+}
 .project-title-mobile{
   justify-self:start;
   font-family: 'Soyuz-Custom' , 'Untitled Sans' , sans-serif;
   text-decoration: none;
   font-size: 2em;
   margin: 8px auto;
-  a{color: $main-color; text-decoration: none}
+  color: $main-color;
 }
 
 .heterodox-mobile{
+  position: fixed;
   opacity: .1;
-  margin-top: 50px;
+  bottom: 50px;
   color: $hx-black;
   width: 80%;
   font-size: .9em;
   a{text-decoration: none; color: $hx-black}
   #heterodox-logo{width:50%; path{fill: $hx-black;}}
   #heterodox-text{margin-top: 5px;}
-  &:hover{ opacity: 1;
-  a{&:hover{border-bottom: 2px solid $hx-black ; padding-bottom: 5px;}
+  &:active{ opacity: 1;
+  a{&:active{border-bottom: 2px solid $hx-black ; padding-bottom: 5px;}
   }}}
+
+
+  .heterodox-mobile-active{opacity: 1;}
