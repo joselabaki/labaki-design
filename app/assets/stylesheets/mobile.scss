@@ -1,11 +1,15 @@
 @import 'variables';
 
 .navigation-mobile{
+  display: inline-grid;
   width: 100%;
   margin-top: 30px;
   padding-left: 10px;
+  grid-template-columns: 35px auto;
+  align-items:center;
 
 }
+
 
 .main-container-mobile{
   margin-top: 50px;
@@ -13,18 +17,77 @@
   padding-left: 10px;
 }
 
-.links-nav-mobile{
+#hamburger{
+  .patty{
+    width:20px;
+    height: 2px;
+    background-color: $main-color;
+    margin-bottom: 3px;
+  }
+}
+
+#logo{padding: 1px 0; margin-left: 20px;;}
+.top{display: inline-flex; padding: 1px 0; align-items:center;}
+.inner-navigation{
   display: none;
+  position: absolute;
+  background-color: white;
+  font-family: 'Untitled Sans', sans-serif;
+  color: $main-color;
+  text-transform: uppercase;
+  font-size: 1em;
+  a{text-decoration: none; color: $main-color;}
+   line-height: 30px;
+   padding: 10px;
+   padding-left: 0px;
+   padding-bottom: 0px;
+   top:64px;
+   left: 10px;
+   box-sizing:content-box;
+   width: 150px;
+}
+.all-links{
+  margin-right: 40px;
+
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding:  0px;
+  li{
+    padding-bottom: 3px;
+    border-bottom: .5px solid $main-color;
+}
+}
+
+#close{
+  width: 20px;
+  svg{width: 12px;
+    fill:$main-color;
+}}
+
+.inner-projects{
+  display: none;
+  border-bottom: 0px;
+  font-size: .9em;
+  line-height: 25px;
+  padding: 1px 0;
+  &:first-child{
+    margin-top: 7px;
+  }
 }
 
 ///////////////////////////////// Index ////
-.single-project-mobile{display: inline-flex;align-items: center;border-bottom: 1px dotted $main-color; width: 95%;
+.single-project-mobile{display: inline-grid;align-items: baseline;border-bottom: 1px dotted $main-color; width: 95%;
+  grid-template-columns: auto 1fr auto;
 }
 .project-title-mobile{
   justify-self:start;
   font-family: 'Soyuz-Custom' , 'Untitled Sans' , sans-serif;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 8px auto;
   color: $main-color;
 }
@@ -45,3 +108,11 @@
 
 
   .heterodox-mobile-active{opacity: 1;}
+  .subcat-mobile{margin-left: 10px; font-family: 'Untitled Sans' , sans-serif; font-size: .8em; color: $main-color; align-items: baseline; text-transform: capitalize;}
+
+.arrow-click{
+  width: 70px;
+  justify-self: flex-end;
+  svg{path{fill:$main-color}}
+
+}

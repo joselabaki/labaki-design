@@ -3,7 +3,8 @@
 
 <div class="single-project-mobile <%= p.title.parameterize%>">
       <div class="project-info"><div class="project-title-mobile"> <%= p.title %></div></div>
-      <div class="subcat"><%= p.subcategory %> </div>
+      <div class="subcat-mobile"><%= p.subcategory %> </div>
+      <div class="arrow-click invisible" id="<%=p.title.parameterize%>-arrow"> <%= link_to project_path(p) do%> <%= inline_svg 'arrow-click.svg'%> <%end%></div>
       <% p.thumbnails.each do |th| %><div class="thumbails-index-mobile invisible" id= "<%=p.title.parameterize%>-thumb-mobile" ><%= image_tag (th.url)%></div><% end %>
 </div>
 
@@ -19,18 +20,18 @@
 
 <% @projects.each do |p| %>
   $('.single-project-mobile.<%=p.title.parameterize%>').click(function(){
-    console.log("clicked")
-  $('.thumbails-index-mobile').removeClass('visible', 1000 )
+  $('.arrow-click').removeClass('visible')
+  $(this).find('.arrow-click').addClass('visible');
+  $('.thumbails-index-mobile').removeClass('visible')
   $('#<%=p.title.parameterize%>-thumb-mobile').addClass('visible', 1000);
 
   })
   $(document).click(function(event) {
     if (!$(event.target).closest(".single-project-mobile.<%=p.title.parameterize%>").length) {
       $("body").find("#<%=p.title.parameterize%>-thumb-mobile").removeClass('visible', 1000);
-    }
-  });
+      $("body").find("#<%=p.title.parameterize%>-arrow").removeClass('visible', 1000);
 
-
+}});
 
 
 
@@ -40,8 +41,13 @@ $('.<%=p.title.parameterize %>').addClass('new-project');
 <%end%>
 
 $('.heterodox-mobile').click(function(){
-  console.log("heterodox");
   $(this).toggleClass('heterodox-mobile-active')
 });
+
+$(document).click(function(event) {
+  if (!$(event.target).closest(".heterodox-mobile").length) {
+    $('.heterodox-mobile').removeClass('heterodox-mobile-active')
+  }});
+
 
 </script>
