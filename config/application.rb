@@ -17,6 +17,7 @@ module LabakiDesign
     # the framework and any gems in your application.
     config.i18n.fallbacks = true
     config.assets.paths << Rails.root.join("app", "assets", "fonts", "images")
+    config.assets.precompile += %w( *.js *.css )
 
 
   end
