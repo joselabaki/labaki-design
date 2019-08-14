@@ -11,12 +11,28 @@
 .show-project-body-mobile{
   font-family: 'Untitled Sans' , sans-serif;
   font-size: .9em;
-  width: 90%;
-  margin: 20px 0px;
+  width: 94%;
+  margin: 15px 0px;
   padding: 15px 0px;
   border-top: 1px dotted $main-color;
   border-bottom: 1px dotted $main-color;
+}
+
+.images-block-mobile{
+img{width: 94%; padding-bottom: 20px;}
+}
+
+#subcat-mobile{font-family: 'Untitled Sans' , sans-serif;font-size: .9em; color: $sec-color;}
+
+.in-project-nav-mobile{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  //background-color: red;
+  width: 94%;
+  margin: 40px 0;
 
 }
 
-.in-project-nav-mobile{display: none}
+#previous-mobile{justify-self:start;svg{width:70px; fill:$main-color; transform: rotate(180deg);}}
+#back-home-mobile{justify-self:center; svg{width: 15px; path{fill: $main-color}}}
+#next-mobile{justify-self:end;svg{width:70px; fill:$main-color} }
