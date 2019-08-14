@@ -1,5 +1,6 @@
 @import 'variables';
 
+html{ overflow-x: hidden;}
 .navigation-mobile{
   display: inline-grid;
   width: 100%;
@@ -8,13 +9,14 @@
   grid-template-columns: 35px auto;
   align-items:center;
 
+
 }
 
 
 .main-container-mobile{
   margin-top: 50px;
   width: 100%;
-  padding-left: 10px;
+  margin-left: 10px;
 }
 
 #hamburger{
