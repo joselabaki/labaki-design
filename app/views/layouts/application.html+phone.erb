@@ -19,14 +19,14 @@
       <ul id="links-nav-mobile">
           <li class="projects-nav-mobile">
             <ul id="projects-nav">Projects
-              <li> <%= link_to t('all-projects'), projects_path %></li>
-            <li><%= link_to t('graphic-design'), projects_path(:category => "graphic") %></li>
-            <li> <%= link_to t('industrial-design'), projects_path(:category => "industrial") %></li>
+              <li></li>
+            <li></li>
+            <li>  %></li>
           </ul>
         </li>
-      <li class="static"> <%= link_to t('about') , about_path %></li>
-      <li> <%= link_to "Contact" , contact_path %></div>
-      <li class="languages"><%= link_to_unless_current 'EN' , locale: 'en' %> | <%= link_to_unless_current 'FR' , locale: 'fr' %></li>
+      <li class="static"> </li>
+      <li> </div>
+      <li class="languages"></li>
 
 </ul>
 </div>
@@ -46,15 +46,15 @@
   <div class="inner-navigation ">
   <ul>
     <li> <ul id="inner-projects">Projects
-            <li class= "inner-projects">All</li>
-            <li class= "inner-projects">industrial</li>
-            <li class= "inner-projects">Graphic</li>
+            <li class= "inner-projects"> <%= link_to t('all-projects'), projects_path %></li>
+            <li class= "inner-projects"><%= link_to t('graphic-design'), projects_path(:category => "graphic") %></li>
+            <li class= "inner-projects"><%= link_to t('industrial-design'), projects_path(:category => "industrial")%></li>
           </ul>
 
     </li>
-    <li>About</li>
-    <li>Contact</li>
-    <li>languages</li>
+    <li><%= link_to t('about') , about_path %></li>
+    <li><%= link_to "Contact" , contact_path %></li>
+    <li class="languages"><%= link_to_unless_current 'EN' , locale: 'en' %> | <%= link_to_unless_current 'FR' , locale: 'fr' %></li>
   </ul>
 </div>
 </div>
