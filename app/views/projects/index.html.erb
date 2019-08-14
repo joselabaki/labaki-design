@@ -3,7 +3,7 @@
 <% @projects.each do |p| %>
 
 <div class="single-project <%= p.title.parameterize%>">
-      <div class="project-info"><div class="project-title"> <%= link_to project_path(p) do %> <%= p.title %><%end%> </div></div>
+      <div class="project-info"><div class="project-title"> <%= link_to project_path(p) do %><%= p.title %><%end%> </div></div>
       <div class="subcat"><%= p.subcategory %> </div>
       <% p.thumbnails.each do |th| %><div class="thumbails-index" id= "<%=p.title.parameterize%>-thumb" ><%= image_tag (th.url)%></div><% end %>
 </div>

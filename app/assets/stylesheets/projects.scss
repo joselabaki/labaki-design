@@ -17,8 +17,11 @@ font-family: 'Soyuz-Custom' , 'Untitled Sans' , sans-serif;
 text-decoration: none;
 font-size: 4em;
 margin: 8px auto;
+color: $main-color;
 a{color: $main-color; text-decoration: none}
+
 }
+
 
 .subcat{margin-left: 20px; font-family: 'Untitled Sans' , sans-serif;; font-size: 1em; color: $main-color;}
 hr{ color: $main-color; margin-top:0px;}
