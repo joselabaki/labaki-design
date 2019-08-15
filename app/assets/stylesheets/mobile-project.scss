@@ -36,3 +36,8 @@ img{width: 94%; padding-bottom: 20px;}
 #previous-mobile{justify-self:start;svg{width:70px; fill:$main-color; transform: rotate(180deg);}}
 #back-home-mobile{justify-self:center; svg{width: 15px; path{fill: $main-color}}}
 #next-mobile{justify-self:end;svg{width:70px; fill:$main-color} }
+
+#logo{
+  font-family: 'Untitled Sans' , sans-serif;
+  color: $main-color;
+}
