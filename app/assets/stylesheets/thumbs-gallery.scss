@@ -2,18 +2,6 @@
 img{width: 200px}
 }
 
-#the-first-thumb-mobile , #le-premier-thumb-mobile{
-  position: absolute;
-  top:140px;
-  left:80px;
-}
-
-#the-second-thumb-mobile , #the-second-thumb-mobile{
-  position: absolute;
-  top:180px;
-  left:100px;
-}
-
 .invisible{display: none};
 .visible{display: block;}
 
@@ -24,14 +12,42 @@ img{width: 200px}
 display: none;
 img{width: 200px}
 }
-#the-first-thumb , #le-premier-thumb{
-  position: absolute;
-  top:140px;
-  left:80px;
-}
 
-#the-second-thumb , #the-second-thumb{
+//////////////////////
+#lmn-thumb{
   position: absolute;
   top:180px;
   left:300px;
+}
+
+#mdlm-thumb{
+  position: absolute;
+  top:180px;
+  left:300px;
+}
+
+#sophie-thumb{
+  position: absolute;
+  top:320px;
+  left:150px;
+}
+
+//////////////////////
+
+#lmn-thumb-mobile{
+  position: absolute;
+  top:180px;
+  left:300px;
+}
+
+#mdlm-thumb-mobile{
+  position: absolute;
+  top:80px;
+  left:30px;
+}
+
+#sophie-thumb-mobile{
+  position: absolute;
+  top:120px;
+  left:50px;
 }
