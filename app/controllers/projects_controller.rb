@@ -56,5 +56,5 @@ end
 private
 
 def project_params
-  params.require(:project).permit(:title, :body , :description,  {images: []}, :category, :subcategory , {thumbnails: []}, :nouveau , :code)
+  params.require(:project).permit(:title, :body , :description,  {images: []}, :category, :subcategory , {thumbnails: []}, :nouveau , :code , :topos , :leftpos , :toposmobile , :leftposmobile)
 end
