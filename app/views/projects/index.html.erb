@@ -7,7 +7,6 @@
       <div class="subcat"><%= p.subcategory %> </div>
       <% p.thumbnails.each do |th| %><div style="top:<%= p.topos %>px ; left:<%= p.leftpos%>px" class="thumbails-index" id= "<%=p.code%>-thumb" ><%= image_tag (th.url)%></div><% end %>
 </div>
-<!-- <hr class="separateur"> -->
 
 <%end%>
 
@@ -21,9 +20,9 @@
 <% @projects.each do |p| %>
  <script type="text/javascript">
 $('.<%=p.title.parameterize %> a ').hover(function(){
-$('#<%=p.code%>-thumb').fadeIn()});
+$('#<%=p.code%>-thumb').show()});
 $('.<%=p.title.parameterize %> a ').mouseleave(function(){
-$('#<%=p.code%>-thumb').fadeOut()});
+$('#<%=p.code%>-thumb').hide()});
 <% if p.nouveau? %>
 $('.<%=p.title.parameterize %>').addClass('new-project')
 <%end%>
