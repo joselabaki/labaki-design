@@ -35,11 +35,6 @@
 
 
 
-<% if p.nouveau? %>
-$('.<%=p.title.parameterize %>').addClass('new-project');
-<%end%>
-<%end%>
-
 $('.heterodox-mobile').click(function(){
   $(this).toggleClass('heterodox-mobile-active')
 });
@@ -48,6 +43,10 @@ $(document).click(function(event) {
   if (!$(event.target).closest(".heterodox-mobile").length) {
     $('.heterodox-mobile').removeClass('heterodox-mobile-active')
   }});
+
+
+<%end%>
+
 
 
 </script>

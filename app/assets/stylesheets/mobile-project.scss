@@ -1,11 +1,16 @@
 @import 'variables';
+.new-project-mobile{
+  a{color: red }
+  color: red;
+}
 
 .show-project-title-mobile{
   font-family: 'Soyuz-Custom' , 'Untitled Sans' , sans-serif;
-  font-size: 2em;
+  font-size: 1.7em;
   color: $main-color;
   text-rendering: optimizeLegibility;
   margin: 0;
+  width: 90%;
 }
 
 .show-project-body-mobile{
