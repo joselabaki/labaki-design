@@ -31,12 +31,12 @@ body{overflow-x: hidden;}
   }
 }
 
-#logo{padding: 1px 0; margin-left: 20px;;}
+#logo-mobile{padding: 1px 0; margin-left: 20px; width: 60px; .cls-1{fill:#751F24}}
 .top{display: inline-flex; padding: 1px 0; align-items:center;}
 .inner-navigation{
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: $body-color;
   font-family: 'Untitled Sans', sans-serif;
   color: $main-color;
   text-transform: uppercase;
@@ -92,17 +92,17 @@ ul {
   justify-self:start;
   font-family: 'Soyuz-Custom' , 'Untitled Sans' , sans-serif;
   text-decoration: none;
-  font-size: 1.4em;
+  font-size: 1.7em;
   margin: 8px auto;
   color: $main-color;
 }
 
 .heterodox-mobile{
   position: fixed;
-  opacity: .1;
-  bottom: 50px;
+  opacity: .06;
+  bottom: 20px;
   color: $hx-black;
-  width: 80%;
+  width: 70%;
   font-size: .9em;
   a{text-decoration: none; color: $hx-black}
   #heterodox-logo{width:50%; path{fill: $hx-black;}}

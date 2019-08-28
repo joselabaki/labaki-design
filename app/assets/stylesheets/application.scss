@@ -19,7 +19,9 @@
 html{height: 100%;}
 body{
   margin: 0;padding: 0;
-  scroll-behavior: smooth;}
+  scroll-behavior: smooth;
+  background-color: $body-color;
+}
 
 
 p{font-family: 'Untitled Sans', sans-serif; color: $sec-color;}
@@ -42,13 +44,14 @@ p{font-family: 'Untitled Sans', sans-serif; color: $sec-color;}
     display: inline;
     display: grid;
     grid-template-columns: 20% 20% auto;
-    background-color: white;
 
 }
 
 .logo{align-self: center;}
 
-
+#nav-logo{
+  width: 40%;
+}
 
 .links-nav{
   font-family: 'Untitled Sans', sans-serif;
@@ -92,6 +95,9 @@ opacity: 0.4;
    right: 0;
    text-align: center;
    font-size: 10px;
-   background-color: white;
+   color: #424141;
+   margin: 0;
+   padding: 3px;
+   background-color: $body-color;
 }
 ///////scrollTop
