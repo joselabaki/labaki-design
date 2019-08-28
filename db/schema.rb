@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_08_184454) do
+ActiveRecord::Schema.define(version: 2019_08_19_135633) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -63,6 +63,11 @@ ActiveRecord::Schema.define(version: 2019_07_08_184454) do
     t.string "subcategory"
     t.string "thumbnails", default: [], array: true
     t.boolean "nouveau", default: false
+    t.string "code"
+    t.integer "topos"
+    t.integer "leftpos"
+    t.integer "toposmobile"
+    t.integer "leftposmobile"
     t.index ["slug"], name: "index_projects_on_slug"
   end
 

@@ -15,6 +15,10 @@
     </div>
   <% end %>
 
+  <p>
+    <%= form.label :code %><br>
+    <%= form.text_area :code ,size: "30x1"%>
+  </p>
 
       <p>
         <%= form.label t('record')%><br>
@@ -47,6 +51,16 @@
           <%= form.check_box :nouveau%>
         </p>
 
+<div class="numbers"><p>Thumnail Position</p>
+  <p><%= form.label 'top' %> <%= form.number_field :topos %></p>
+  <p><%= form.label 'top mobile' %> <%= form.number_field :toposmobile %></p>
+  <p><%= form.label 'left' %> <%= form.number_field :leftpos %></p>
+  <p><%= form.label 'left mobile' %> <%= form.number_field :leftposmobile %></p>
+
+</div>
+
+
+
         <%= form.submit %>
-      </p>
+    
     <% end %>

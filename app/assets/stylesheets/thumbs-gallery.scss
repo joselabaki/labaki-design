@@ -1,17 +1,6 @@
 .thumbails-index-mobile{
 img{width: 200px}
-}
-
-#the-first-thumb-mobile , #le-premier-thumb-mobile{
-  position: absolute;
-  top:140px;
-  left:80px;
-}
-
-#the-second-thumb-mobile , #the-second-thumb-mobile{
-  position: absolute;
-  top:180px;
-  left:100px;
+position: absolute;
 }
 
 .invisible{display: none};
@@ -19,19 +8,8 @@ img{width: 200px}
 
 
 
-///////////////////////////DESKTOP ///////
 .thumbails-index{
 display: none;
 img{width: 200px}
-}
-#the-first-thumb , #le-premier-thumb{
-  position: absolute;
-  top:140px;
-  left:80px;
-}
-
-#the-second-thumb , #the-second-thumb{
-  position: absolute;
-  top:180px;
-  left:300px;
+position: absolute;
 }

@@ -5,9 +5,8 @@
 <div class="single-project <%= p.title.parameterize%>">
       <div class="project-info"><div class="project-title"> <%= link_to project_path(p) do %><%= p.title %><%end%> </div></div>
       <div class="subcat"><%= p.subcategory %> </div>
-      <% p.thumbnails.each do |th| %><div class="thumbails-index" id= "<%=p.title.parameterize%>-thumb" ><%= image_tag (th.url)%></div><% end %>
+      <% p.thumbnails.each do |th| %><div style="top:<%= p.topos %>px ; left:<%= p.leftpos%>px" class="thumbails-index" id= "<%=p.code%>-thumb" ><%= image_tag (th.url)%></div><% end %>
 </div>
-<!-- <hr class="separateur"> -->
 
 <%end%>
 
@@ -20,10 +19,10 @@
 
 <% @projects.each do |p| %>
  <script type="text/javascript">
-$('.<%=p.title.parameterize %> a ').hover(function(){
-$('#<%=p.title.parameterize%>-thumb').fadeIn()});
-$('.<%=p.title.parameterize %> a ').mouseleave(function(){
-$('#<%=p.title.parameterize%>-thumb').fadeOut()});
+$('.<%=p.title.parameterize %>  ').mouseenter(function(){
+$('#<%=p.code%>-thumb').show()});
+$('.<%=p.title.parameterize %>  ').mouseleave(function(){
+$('#<%=p.code%>-thumb').hide()});
 <% if p.nouveau? %>
 $('.<%=p.title.parameterize %>').addClass('new-project')
 <%end%>
