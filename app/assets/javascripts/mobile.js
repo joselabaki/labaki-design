@@ -17,7 +17,7 @@ $('#hamburger').removeClass("invisible")
 
 $('#inner-projects').click(function(){$('.inner-projects').slideDown('slow')});
 
-  $(".inner-projects , .in-project-nav-mobile , .languages").click(function() {
+  $(".inner-projects , .in-project-nav-mobile , .languages , .logo , .logo-mobile").click(function() {
        window.setTimeout(function(){window.location.reload()}, 150);
           });
 
