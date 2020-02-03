@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   scope "(:locale)" , locale: /#{I18n.available_locales.join("|")}/   do
   root :to => 'static_pages#construction'
   resources :projects
-  get '/about' => 'static_pages#about'
+  get '/info' => 'static_pages#info'
   get '/contact' => 'static_pages#contact'
   get '/construction' => 'static_pages#construction'
   get '/cms' => 'backend#cms'
