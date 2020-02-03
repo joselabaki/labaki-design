@@ -1,6 +1,6 @@
 fr:
 
-  more: 'Info'
+  more: 'Infos'
   home: 'Acceuil'
   all-projects: 'Tous'
   the-projects: 'Projets'
@@ -15,3 +15,7 @@ fr:
       heterodox-link: 'Montrez-moi heterodox'
   about-text: >
           De nos jours, tous les studios semblent avoir adoptés la nouvelle définition du design. Ils dépassent l'esthétique et les apparences et s'intéressent à l’essentiel, au problématique. Cette transition incite les professionnels à élargir leurs horizons, leur méthode devient holistique et leurs travaux, multidisciplinaires. Les studio créent alors tout artefact - produits, graphisme, systèmes, etc. -  qui puisse répondre à un enjeu. Et nous? Nous faisions pareil. Non?
+  reach-out: 'Disponibles sur'
+  medium: 'par'
+  byphone: 'ou au téléphone'
+  about: 'À propos'

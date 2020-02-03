@@ -102,7 +102,15 @@ opacity: 0.4;
 ///////scrollTop
 
 .about-text{
-  width: 60%;
-  font-size: 17px;
-  p{margin-top: 150px;}
+  width: 45%;
 }
+
+
+.info-container{
+  margin-top: 70px;  font-size: 17px;
+  .header-a{color: black; font-size: 22px; margin-bottom: 0px;}
+  p{ margin: 10px 0px;   a{ color: $new-project}
+}
+}
+
+  .contact{margin-top: 80px;}
