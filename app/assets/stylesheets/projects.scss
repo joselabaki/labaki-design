@@ -73,7 +73,7 @@ a{color: $new-project;}
 
 ////////////IN PROJECT NAV /////////////////
 
-#back-home{text-align: center; font-family: 'Untitled Sans' , sans-serif;}
+#back-home{ font-family: 'Untitled Sans' , sans-serif;}
 .show-project{display: grid;}
 .images-block{img{width: 1000px;margin-bottom: 25px;}}
 
@@ -82,20 +82,20 @@ a{color: $new-project;}
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   a{
-    font-family: 'Soyuz-Custom' , 'Untitled Sans' , sans-serif;
+    font-family: 'Untitled Sans' , sans-serif;
+    text-transform:uppercase;
     text-decoration: none;
     color: $main-color;
-    font-size: 1.1em;
-    text-align: center;
+    font-size: 1em;
   }
 }
 
 .next-project{display:grid; grid-template-columns: 1fr auto;
-justify-items: end;align-items: center;
+justify-items: end;
 &:hover{color: $highlight; path{fill:$highlight}}
 
 }
-.prev-project{display:grid; grid-template-columns: auto 1fr;justify-items: start;align-items: center;
+.prev-project{display:grid; grid-template-columns: auto 1fr;justify-items: start;
 &:hover{color: $highlight; path{fill:$highlight}}
 }
 
