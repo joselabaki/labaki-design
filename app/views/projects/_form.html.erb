@@ -16,51 +16,53 @@
   <% end %>
 
   <p>
-    <%= form.label :code %><br>
-    <%= form.text_area :code ,size: "30x1"%>
+    <%= form.label :code %>
+    <%= form.text_area :code ,size: "10x1"%>
+    <%= form.label :nouveau %>
+      <%= form.check_box :nouveau%>
   </p>
-
-      <p>
-        <%= form.label t('record')%><br>
+<p>
+        <%= form.label t('record')%>
         <%= form.text_area :title ,size: "30x1"%>
       </p>
       <p>
       <%= form.label :description %><br>
-      <%= form.text_area :description, size: "50x17" %>
+      <%= form.text_area :description, size: "50x10" %>
     </p>
 
       <p>
         <%= form.label :body %><br>
-        <%= form.text_area :body , size: "50x17" %>
+        <%= form.text_area :body , size: "50x10" %>
       </p>
 
-      <p>    <%= form.label :category %><br>
+      <p>    <%= form.label :category %>
         <%=form.select :category , ['graphic' , 'industrial'] %></p>
           <p>
-            <p> <%= form.label :subcategory %><br>
+            <p> <%= form.label :subcategory , "Sub Category"%>
               <%= form.text_area :subcategory,size: "30x1" %></p>
                 <p>
-  <p>    <%= form.label :images %><br>
+  <p>    <%= form.label :images %>
     <%= form.file_field :images, multiple: true %></p>
       <p>
-
-        <p>  <%= form.label :thumbnails %><br>
+        <p> <%= form.label :alttext %>
+          <%= form.text_area :alttext , size: "30x1" %></p>
+            <p>
+        <p>  <%= form.label :thumbnails , "Thumbnail" %>
           <%= form.file_field :thumbnails, multiple: true %>
         </p>
-        <p>  <%= form.label :nouveau %><br>
-          <%= form.check_box :nouveau%>
-        </p>
 
-<div class="numbers"><p>Thumnail Position</p>
+
+<div class="numbers">
+  <div class="inline-cms">
   <p><%= form.label 'top' %> <%= form.number_field :topos %></p>
   <p><%= form.label 'top mobile' %> <%= form.number_field :toposmobile %></p>
+  </div>
+  <div class="inline-cms" id="left-mob">
   <p><%= form.label 'left' %> <%= form.number_field :leftpos %></p>
-  <p><%= form.label 'left mobile' %> <%= form.number_field :leftposmobile %></p>
+  <p><%= form.label 'left mobile' %> <%= form.number_field :leftposmobile %></p></div>
 
 </div>
-
-
-
-        <%= form.submit %>
-    
+<div class="submit-cms">
+  <%= form.submit %>
+</div>
     <% end %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_19_135633) do
+ActiveRecord::Schema.define(version: 2020_02_06_102130) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,6 +68,7 @@ ActiveRecord::Schema.define(version: 2019_08_19_135633) do
     t.integer "leftpos"
     t.integer "toposmobile"
     t.integer "leftposmobile"
+    t.string "alttext"
     t.index ["slug"], name: "index_projects_on_slug"
   end
 

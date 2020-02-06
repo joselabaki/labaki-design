@@ -6,6 +6,8 @@
     <%= csp_meta_tag %>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<%= t('desc') %> ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -51,7 +53,9 @@
 
 <%= yield %>
 </div>
+<footer>
 <p class="page-footer-mobile">&copy; designed &amp; developed by Labaki - 2020  </p>
+</footer>
 
   </body>
 </html>

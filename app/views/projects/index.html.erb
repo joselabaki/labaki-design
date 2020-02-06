@@ -8,7 +8,7 @@
     </div> <div class="subcat"><%= p.subcategory %> </div>
 
       <% p.thumbnails.each do |th| %>
-      <div style="top:<%= p.topos %>px ; left:<%= p.leftpos%>px" class="thumbails-index" id= "<%=p.code%>-thumb" ><%= image_tag (th.url)%></div>
+      <div style="top:<%= p.topos %>px ; left:<%= p.leftpos%>px" class="thumbails-index" id= "<%=p.code%>-thumb" ><%= image_tag (th.url) , alt: p.alttext.to_s.parameterize %></div>
       <% end %>
 </div>
 
