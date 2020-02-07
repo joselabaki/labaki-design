@@ -24,7 +24,7 @@ a{color: $main-color; text-decoration: none}
 }
 
 
-.subcat{margin-left: 20px; font-family: 'kernitalic' , sans-serif;
+.subcat{margin-left: 20px; font-family: 'Kern-r' , sans-serif;
   font-size: 1em; color: $main-color;
   text-rendering: optimizeLegibility;}
 hr{ color: $main-color; margin-top:0px;}
@@ -62,11 +62,13 @@ hr{ color: $main-color; margin-top:0px;}
   padding: 20px 0px;
   border-top: 1px dotted $main-color;
   border-bottom: 1px dotted $main-color;
+  text-rendering:optimizeLegibility;
+
 }
 
 .show-project-thumb{margin-bottom: 30px;}
 #show-project-sub{
-  font-family: 'kernitalic';
+  font-family: 'Kern-r';
   text-rendering:optimizeLegibility;
 }
 //// NEW PROJECT ////
@@ -90,6 +92,7 @@ a{color: $new-project;}
 
   a{
     font-family: 'Kern-r' , sans-serif;
+    text-rendering:optimizeLegibility;
     text-transform:uppercase;
     text-decoration: none;
     color: $main-color;

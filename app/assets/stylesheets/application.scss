@@ -24,7 +24,8 @@ body{
 }
 
 
-p{font-family: 'Kern-r', sans-serif; color: $sec-color; line-height: 135%;}
+p{font-family: 'Kern-r', sans-serif; color: $sec-color; line-height: 135%;  text-rendering:optimizeLegibility;
+}
 
 .main-container{
   width: 1200px;
