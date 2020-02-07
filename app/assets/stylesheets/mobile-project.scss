@@ -5,7 +5,7 @@
 }
 
 .show-project-title-mobile{
-  font-family: 'Soyuz-Custom' , 'Untitled Sans' , sans-serif;
+  font-family: 'Soyuz-Custom' , 'Kern-r' , sans-serif;
   font-size: 1.85em;
   color: $main-color;
   text-rendering: optimizeLegibility;
@@ -14,7 +14,7 @@
 }
 
 .show-project-body-mobile{
-  font-family: 'Untitled Sans' , sans-serif;
+  font-family: 'Kern-r' , sans-serif;
   font-size: .9em;
   width: 94%;
   margin: 15px 0px;
@@ -27,7 +27,7 @@
 img{width: 94%; padding-bottom: 20px;}
 }
 
-#subcat-mobile{font-family: 'Untitled Sans' , sans-serif;font-size: .9em; color: $sec-color;}
+#subcat-mobile{font-family: 'Kern-r' , sans-serif;font-size: .9em; color: $sec-color;}
 
 .in-project-nav-mobile{
   display: grid;
@@ -43,6 +43,6 @@ img{width: 94%; padding-bottom: 20px;}
 #next-mobile{justify-self:end;svg{width:70px; fill:$main-color} }
 
 #logo{
-  font-family: 'Untitled Sans' , sans-serif;
+  font-family: 'Kern-r' , sans-serif;
   color: $main-color;
 }

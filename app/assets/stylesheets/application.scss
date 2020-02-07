@@ -24,7 +24,8 @@ body{
 }
 
 
-p{font-family: 'Untitled Sans', sans-serif; color: $sec-color;}
+p{font-family: 'Kern-r', sans-serif; color: $sec-color; line-height: 130%;}
+
 .main-container{
   width: 1200px;
   margin: 0 auto;
@@ -40,28 +41,24 @@ p{font-family: 'Untitled Sans', sans-serif; color: $sec-color;}
     top:0px;
     padding-bottom: 20px;
     padding-top: 60px;
-    position: sticky;
-    display: inline;
     display: grid;
     grid-template-columns: 20% 20% auto;
+    align-items: center;
 
 }
 
 
-#nav-logo{
-  width: 40%;
-}
+#nav-logo{width: 40%; .cls-1{fill:$logo-color;}}
 
 .links-nav{
-  font-family: 'Untitled Sans', sans-serif;
+  font-family: 'Kern-r', sans-serif;
   text-transform: uppercase;
-  font-size: .9em;
+  font-size: .95em;
   display:grid;
-  grid-template-columns: repeat(5, auto);
-  grid-gap: 10px;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 50px;
   align-items: center;
-  justify-items: end;
-  width: 50%;
+//  width: 50%;
   justify-self: end;
   color: $main-color;
   a{text-decoration: none; color: $main-color;
@@ -94,7 +91,7 @@ opacity: 0.4;
    right: 0;
    text-align: center;
    font-size: 11px;
-   color: #a9a9a9;
+   color: $details;
    margin: 0;
    padding: 20px;
    background-color: $body-color;
@@ -106,7 +103,7 @@ opacity: 0.4;
    right: 0;
    text-align: center;
    font-size: 9.5px;
-   color: #a9a9a9;
+   color: $details;
    margin: 0;
    padding: 10px;
    background-color: $body-color;
@@ -120,7 +117,7 @@ opacity: 0.4;
 
 .info-container{
   margin-top: 70px;  font-size: 17px;
-  .header-a{color: $header-black; font-size: 22px; margin-bottom: 0px;}
+  .header-a{font-family: 'Kern-b' ; color: $header-black; font-size: 20px; margin-bottom: 0px;}
   p{ margin: 10px 0px;   a{ color: $new-project}
 }
 }

@@ -13,7 +13,7 @@
 
 .project-title{
 justify-self:start;
-font-family: 'Soyuz-Custom' , 'Untitled Sans' , sans-serif;
+font-family: 'Soyuz-Custom' , sans-serif;
 text-decoration: none;
 font-size: 4em;
 margin: 8px auto;
@@ -23,7 +23,7 @@ a{color: $main-color; text-decoration: none}
 }
 
 
-.subcat{margin-left: 20px; font-family: 'Untitled Sans' , sans-serif;font-size: 1em; color: $main-color;}
+.subcat{margin-left: 20px; font-family: 'Kern-i' , sans-serif;font-size: 1em; color: $main-color;}
 hr{ color: $main-color; margin-top:0px;}
 
   ///////HETERODOX EASTER EGG////////////
@@ -33,19 +33,19 @@ hr{ color: $main-color; margin-top:0px;}
     bottom: 80px;
     opacity: .1;
     margin-top: 30px;
-    color: $hx-black;
+    color: $sec-color;
     width: 20%;
     font-size: .9em;
-    a{text-decoration: none; color: $hx-black}
-    #heterodox-logo{width:50%; path{fill: $hx-black;}}
+    a{text-decoration: none; color: $sec-color}
+    #heterodox-logo{width:50%; path{fill: $sec-color;}}
     #heterodox-text{margin-top: 5px;}
     &:hover{ opacity: 1;
-    a{&:hover{border-bottom: 2px solid $hx-black ; padding-bottom: 5px;}
+    a{&:hover{border-bottom: 2px solid $sec-color ; padding-bottom: 5px;}
     }}}
 
 ////////////////////////////SHOW//////
 .show-project-title{
-  font-family: 'Soyuz-Custom' , 'Untitled Sans' , sans-serif;
+  font-family: 'Soyuz-Custom' , sans-serif;
   font-size: 5em;
   color: $main-color;
   text-rendering: optimizeLegibility;
@@ -53,16 +53,18 @@ hr{ color: $main-color; margin-top:0px;}
 }
 
 .show-project-body{
-  font-family: 'Untitled Sans' , sans-serif;
+  font-family: 'Kern-r' , sans-serif;
   width: 50%;
-  margin: 40px 0px;
-  padding: 40px 0px;
+  margin: 30px 0px;
+  padding: 20px 0px;
   border-top: 1px dotted $main-color;
   border-bottom: 1px dotted $main-color;
 }
 
 .show-project-thumb{margin-bottom: 30px;}
-
+#show-project-sub{
+  font-family: 'Kern-i'
+}
 //// NEW PROJECT ////
 .new-project{
 color: $new-project;
@@ -73,7 +75,7 @@ a{color: $new-project;}
 
 ////////////IN PROJECT NAV /////////////////
 
-#back-home{ font-family: 'Untitled Sans' , sans-serif;}
+#back-home{ font-family: 'Kern-r' , sans-serif;}
 .show-project{display: grid;}
 .images-block{img{width: 1000px;margin-bottom: 25px;}}
 
@@ -81,26 +83,26 @@ a{color: $new-project;}
   margin: 60px 0px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
   a{
-    font-family: 'Untitled Sans' , sans-serif;
+    font-family: 'Kern-r' , sans-serif;
     text-transform:uppercase;
     text-decoration: none;
     color: $main-color;
-    font-size: 1em;
+    font-size: .9em;
   }
 }
 
-.next-project{display:grid; grid-template-columns: 1fr auto;
-justify-items: end;
+.next-project{display:flex; justify-content: flex-end; align-items: center;
 &:hover{color: $highlight; path{fill:$highlight}}
 
 }
-.prev-project{display:grid; grid-template-columns: auto 1fr;justify-items: start;
+.prev-project{ grid-template-columns: auto 1fr;justify-items: start;display: flex;  align-items: center;
 &:hover{color: $highlight; path{fill:$highlight}}
 }
 
 .back-home{justify-self: center}
 .arrow-inner{width:50px;}
-#arrow-inner-prev{transform: rotate(180deg); padding-left: 30px; fill: $main-color}
-#arrow-inner-next{padding-left: 30px; fill: $main-color}
+#arrow-inner-prev{transform: rotate(180deg); padding-left: 30px; fill: $main-color; display: flex;align-self: center;}
+#arrow-inner-next{padding-left: 30px; fill: $main-color;display:flex; align-self: center;}
 /////////////////

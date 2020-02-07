@@ -31,13 +31,13 @@ body{overflow-x: hidden;}
   }
 }
 
-#logo-mobile{padding: 1px 0; margin-left: 20px; width: 60px; .cls-1{fill:#751F24}}
+#logo-mobile{padding: 1px 0; margin-left: 20px; width: 60px; .cls-1{fill:$logo-color}}
 .top{display: inline-flex; padding: 1px 0; align-items:center;}
 .inner-navigation{
   display: none;
   position: absolute;
   background-color: $body-color;
-  font-family: 'Untitled Sans', sans-serif;
+  font-family: 'Kern-r', sans-serif;
   color: $main-color;
   text-transform: uppercase;
   font-size: 1em;
@@ -90,7 +90,7 @@ ul {
 }
 .project-title-mobile{
   justify-self:start;
-  font-family: 'Soyuz-Custom' , 'Untitled Sans' , sans-serif;
+  font-family: 'Soyuz-Custom' , 'Kern-r' , sans-serif;
   text-decoration: none;
   font-size: 1.7em;
   margin: 8px auto;
@@ -101,19 +101,19 @@ ul {
   position: fixed;
   opacity: .1;
   bottom: 80px;
-  color: $hx-black;
+  color: $sec-color;
   width: 70%;
   font-size: .9em;
-  a{text-decoration: none; color: $hx-black}
-  #heterodox-logo{width:50%; path{fill: $hx-black;}}
+  a{text-decoration: none; color: $sec-color}
+  #heterodox-logo{width:50%; path{fill: $sec-color;}}
   #heterodox-text{margin-top: 5px;}
   &:active{ opacity: 1;
-  a{&:active{border-bottom: 2px solid $hx-black ; padding-bottom: 5px;}
+  a{&:active{border-bottom: 2px solid $sec-color ; padding-bottom: 5px;}
   }}}
 
 
   .heterodox-mobile-active{opacity: 1;}
-  .subcat-mobile{margin-left: 10px; font-family: 'Untitled Sans' , sans-serif; font-size: .8em; color: $main-color; align-items: baseline; text-transform: capitalize;}
+  .subcat-mobile{margin-left: 10px; font-family: 'Kern-i' , sans-serif; font-size: .8em; color: $main-color; align-items: baseline; text-transform: capitalize;}
 
 .arrow-click{
   width: 70px;

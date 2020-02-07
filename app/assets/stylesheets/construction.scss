@@ -6,8 +6,8 @@
    right: 0;
    text-align: center;
    font-size: 11px;
-   font-family: 'Untitled Sans' , sans-serif;
-   color: #a9a9a9;
+   font-family: 'Kern-r' , sans-serif;
+   color: $details;
 
 }
 .page-footer-mobile{
@@ -17,10 +17,10 @@
    right: 0;
    text-align: center;
    font-size: 9.5px;
-   color: #a9a9a9;
+   color: $details;
    margin: 0;
    padding: 10px;
-   font-family: 'Untitled Sans' , sans-serif;
+   font-family: 'Kern-r' , sans-serif;
 }
 
 .construction{
@@ -39,13 +39,13 @@
 }
 
 #construction{
-  font-family: 'Soyuz-Custom' , 'Untitled Sans' , sans-serif;
+  font-family: 'Soyuz-Custom' , 'Kern-r' , sans-serif;
   font-size: 3em;
   color: $main-color;
   margin: 0;
 }
 #construction-mobile{
-  font-family: 'Soyuz-Custom' , 'Untitled Sans' , sans-serif;
+  font-family: 'Soyuz-Custom' , 'Kern-r' , sans-serif;
   font-size: 2em;
   color: $main-color;
   margin: 0;
@@ -54,7 +54,7 @@
 
 
 #const-conact{a{
-  font-family: 'Untitled Sans';
+  font-family: 'Kern-r';
   font-size: 1em;
   color: $sec-color;
   text-decoration: none;
