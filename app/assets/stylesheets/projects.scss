@@ -23,7 +23,7 @@ a{color: $main-color; text-decoration: none}
 }
 
 
-.subcat{margin-left: 20px; font-family: 'Kern-i' , sans-serif;font-size: 1em; color: $main-color;}
+.subcat{margin-left: 20px; font-family: 'Kern-i' , sans-serif;font-size: 1em; color: $main-color; text-rendering: optimizeLegibility;}
 hr{ color: $main-color; margin-top:0px;}
 
   ///////HETERODOX EASTER EGG////////////
@@ -63,7 +63,8 @@ hr{ color: $main-color; margin-top:0px;}
 
 .show-project-thumb{margin-bottom: 30px;}
 #show-project-sub{
-  font-family: 'Kern-i'
+  font-family: 'Kern-i';
+  text-rendering:optimizeLegibility;
 }
 //// NEW PROJECT ////
 .new-project{
