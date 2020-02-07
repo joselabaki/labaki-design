@@ -14,6 +14,7 @@
 .project-title{
 justify-self:start;
 font-family: 'Soyuz-Custom' , sans-serif;
+text-rendering: optimizeLegibility;
 text-decoration: none;
 font-size: 4em;
 margin: 8px auto;
@@ -23,7 +24,9 @@ a{color: $main-color; text-decoration: none}
 }
 
 
-.subcat{margin-left: 20px; font-family: 'Kern-i' , sans-serif;font-size: 1em; color: $main-color; text-rendering: optimizeLegibility;}
+.subcat{margin-left: 20px; font-family: 'kernitalic' , sans-serif;
+  font-size: 1em; color: $main-color;
+  text-rendering: optimizeLegibility;}
 hr{ color: $main-color; margin-top:0px;}
 
   ///////HETERODOX EASTER EGG////////////
@@ -63,7 +66,7 @@ hr{ color: $main-color; margin-top:0px;}
 
 .show-project-thumb{margin-bottom: 30px;}
 #show-project-sub{
-  font-family: 'Kern-i';
+  font-family: 'kernitalic';
   text-rendering:optimizeLegibility;
 }
 //// NEW PROJECT ////

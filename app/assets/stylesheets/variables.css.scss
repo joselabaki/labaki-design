@@ -5,6 +5,15 @@
   }
 
 
+  @font-face {
+      font-family: 'kernitalic';
+      src: url('kern-italic-webfont.woff2') format('woff2'),
+           url('kern-italic-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+
+  }
+
   $main-color: #37393e;
   $body-color:  #cbc9c8;
 
