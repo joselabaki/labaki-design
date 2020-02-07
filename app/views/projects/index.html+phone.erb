@@ -19,10 +19,7 @@
 
 <% @projects.each do |p| %>
 
-<% if p.nouveau? %>
-console.log("<%=p.title%>")
-$(".<%=p.title.parameterize%> .project-title-mobile").addClass('new-project-mobile');
-<%end%>
+
 
   $('.single-project-mobile.<%=p.title.parameterize%>').click(function(){
   $('.arrow-click').removeClass('visible')

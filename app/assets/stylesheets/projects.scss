@@ -7,7 +7,7 @@
 
 ///////////INDEX////////
 
-.single-project{display: inline-flex;align-items: center;border-bottom: 1px dotted $main-color; width: 100%;
+.single-project{display: inline-flex;align-items: baseline; width: 100%;
 }
 
 
@@ -19,7 +19,10 @@ text-decoration: none;
 font-size: 4em;
 margin: 8px auto;
 color: $main-color;
-a{color: $main-color; text-decoration: none}
+
+a{ text-decoration: none;color: $main-color;
+
+&:hover{ color: $body-color; -webkit-text-stroke: 1px $main-color;     -webkit-font-smoothing: antialiased;}}
 
 }
 

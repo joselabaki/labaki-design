@@ -85,7 +85,10 @@ ul {
 }
 
 ///////////////////////////////// Index ////
-.single-project-mobile{display: inline-grid;align-items: baseline;border-bottom: 1px dotted $main-color; width: 95%;
+.single-project-mobile{
+  display: inline-grid;align-items: baseline;
+  //border-bottom: 1px dotted $main-color; 
+  width: 95%;
   grid-template-columns: auto 1fr auto;
 }
 .project-title-mobile{
