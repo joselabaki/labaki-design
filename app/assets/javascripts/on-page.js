@@ -29,7 +29,7 @@ $( document ).on('turbolinks:load', function() {
                     }
                 })
 
-                let trans=() => {
+                 trans=() => {
                     document.documentElement.classList.add('transition');
                     window.setTimeout(() => {
                         document.documentElement.classList.remove('transition')
