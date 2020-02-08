@@ -31,7 +31,7 @@ $( document ).on('turbolinks:load', function() {
 
                  trans=function()  {
                     document.documentElement.classList.add('transition');
-                    window.setTimeout(() => {
+                    window.setTimeout(function() {
                         document.documentElement.classList.remove('transition')
                     }, 1000)
                 }
