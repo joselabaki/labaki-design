@@ -1,18 +1,13 @@
 
   @font-face  {
     font-family: 'Soyuz-Custom';
-    src:font-url('soyuzgrotesk-custom-webfont.woff');
+    src: url('soyuzgrotesk-custom-webfont.woff2') format('woff2'),
+        url('soyuzgrotesk-custom-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
   }
 
 
-  @font-face {
-      font-family: 'kernitalic';
-      src: url('kern-italic-webfont.woff2') format('woff2'),
-           url('kern-italic-webfont.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-
-  }
 
   $main-color: #D9C49C;
   $body-color: #f4f2f1;
