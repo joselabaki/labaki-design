@@ -7,8 +7,7 @@
 
 ///////////INDEX////////
 
-.single-project{display: inline-flex;align-items: baseline; width: 100%;
-}
+.single-project{display: inline-flex;align-items: baseline; width: 100%;}
 
 
 .project-title{
@@ -74,12 +73,7 @@ hr{ color: $main-color; margin-top:0px;}
   font-family: 'Kern-r';
   text-rendering:optimizeLegibility;
 }
-//// NEW PROJECT ////
-.new-project{
-color: $new-project;
-a{color: $new-project;}
-}
- //////////////
+
 
 
 ////////////IN PROJECT NAV /////////////////
@@ -104,14 +98,16 @@ a{color: $new-project;}
 }
 
 .next-project{display:flex; justify-content: flex-end; align-items: center;
-&:hover{color: $highlight; path{fill:$highlight}}
+&:hover{color: $sec-color; path{fill:$sec-color}}
 
 }
 .prev-project{ grid-template-columns: auto 1fr;justify-items: start;display: flex;  align-items: center;
-&:hover{color: $highlight; path{fill:$highlight}}
+&:hover{color: $sec-color; path{fill:$sec-color}}
 }
 
-.back-home{justify-self: center}
+.back-home{justify-self: center; a{&:hover{color: $sec-color}}}
+
+
 .arrow-inner{width:50px;}
 #arrow-inner-prev{transform: rotate(180deg); padding-left: 30px; fill: $main-color; display: flex;align-self: center;}
 #arrow-inner-next{padding-left: 30px; fill: $main-color;display:flex; align-self: center;}

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
   <head>
     <title>labaki - <%= yield(:title).downcase %> </title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<%= t('desc') %> ">
-<meta name="google-site-verification" content="sfJVr9_wDUdPqzcV-hAbyYTw88Z25myBRlIZSY6-wsc" />
+    <meta name="google-site-verification" content="sfJVr9_wDUdPqzcV-hAbyYTw88Z25myBRlIZSY6-wsc" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 
@@ -32,17 +31,29 @@
 
             <div class="static">
               <%= link_to t('info') , info_path %></div>
-              <div class="languages"><%= link_to 'EN' , locale: 'en' %> | <%= link_to 'FR' , locale: 'fr' %></div></div>
+              <div class="languages"><%= link_to 'EN' , locale: 'en' %> | <%= link_to 'FR' , locale: 'fr' %></div>
+
+              <div class="toggle-container">
+              <input type="checkbox" id="switch" name="theme" /><label for="switch"><%=inline_svg 'sun.svg' , id: 'sun'%>
+              <%= inline_svg 'moon.svg' , id:'moon' %>
+              </label>
+              </div>
+
+
+            </div><!-- static -->
 
 </div>
+
 <div class="main-container">
+
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 
-      <%= yield %>
-      </div>
+    <%= yield %>
+  </div>
 <footer>
 <p class="page-footer">&copy; designed &amp; developed by Labaki - 2020  </p>
 </footer>
   </body>
+
 </html>

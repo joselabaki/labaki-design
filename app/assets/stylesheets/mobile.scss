@@ -13,7 +13,6 @@ body{overflow-x: hidden;}
 
 }
 
-.new-project-mobile{color: $new-project !important;}
 
 .main-container-mobile{
   margin-top: 20px;
@@ -31,7 +30,7 @@ body{overflow-x: hidden;}
   }
 }
 
-#logo-mobile{padding: 1px 0; margin-left: 20px; width: 60px; .cls-1{fill:$logo-color}}
+#logo-mobile{padding: 1px 0; margin-left: 20px; width: 60px; .cls-1{fill:$sec-color}}
 .top{display: inline-flex; padding: 1px 0; align-items:center;}
 .inner-navigation{
   display: none;
@@ -128,9 +127,11 @@ ul {
 
 .info-container-mobile{ width: 80%;
   margin-top: 20px;  font-size: 15px;
-  .header-a{color: black; font-size: 18px; margin-bottom: 0px;}
+  .header-a{color: $sec-color; font-size: 18px; margin-bottom: 0px;}
   p{ margin: 10px 0px;   a{ color: $main-color}
 }
 .contact{margin-top: 30px;}
 
 }
+
+.toggle-container-mobile{ cursor: pointer; svg{width: 20px; cursor: pointer; fill:$sec-color; } position: absolute; left: 80%;}

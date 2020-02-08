@@ -15,13 +15,9 @@
  */
  @import 'variables';
 
-
-html{height: 100%;}
-body{
-  margin: 0;padding: 0;
-  scroll-behavior: smooth;
-  background-color: $body-color;
-}
+html[data-theme="light"]{height: 100%; background-color: $body-color;}
+body{ margin: 0;padding: 0;
+  scroll-behavior: smooth;}
 
 
 p{font-family: 'Kern-r', sans-serif; color: $sec-color; line-height: 135%;  text-rendering:optimizeLegibility;
@@ -49,29 +45,32 @@ p{font-family: 'Kern-r', sans-serif; color: $sec-color; line-height: 135%;  text
 }
 
 
-#nav-logo{width: 40%; .cls-1{fill:$logo-color;}}
+#nav-logo{width: 40%; .cls-1{fill:$sec-color;}}
+
 
 .links-nav{
   font-family: 'Kern-r', sans-serif;
   text-transform: uppercase;
   font-size: .95em;
   display:grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   grid-gap: 50px;
   align-items: center;
 //  width: 50%;
   justify-self: end;
-  color: $logo-color;
-  a{text-decoration: none; color: $logo-color;
+  color: $sec-color;
+  a{text-decoration: none; color: $sec-color;
     &:hover{color: $main-color;}
   }
 
 }
 
+input#switch{display: none}
+.toggle-container{ cursor: pointer; svg{width: 20px; cursor: pointer; fill:$sec-color; }}
+
+#moon{display: none;}
 .nav-inner{position: absolute; display: none;}
 .projects-nav{padding: 5px; cursor: pointer;}
-
-
 .active{
   padding-bottom: 5px;
   border-bottom: 1px solid $main-color;
@@ -92,7 +91,7 @@ opacity: 0.4;
    right: 0;
    text-align: center;
    font-size: 11px;
-   color: $details;
+   color: $sec-color;
    margin: 0;
    padding: 20px;
    background-color: $body-color;
@@ -104,7 +103,7 @@ opacity: 0.4;
    right: 0;
    text-align: center;
    font-size: 9.5px;
-   color: $details;
+   color: $sec-color;
    margin: 0;
    padding: 10px;
    background-color: $body-color;
@@ -118,9 +117,46 @@ opacity: 0.4;
 
 .info-container{
   margin-top: 70px;  font-size: 17px;
-  .header-a{font-family: 'Kern-b' ; color: $header-black; font-size: 20px; margin-bottom: 0px;}
+  .header-a{font-family: 'Kern-b' ; color: $sec-color; font-size: 20px; margin-bottom: 0px;}
   p{ margin: 10px 0px;   a{ color: $main-color}
 }
 }
 
   .contact{margin-top: 80px;}
+
+  html[data-theme="dark"]{
+
+    
+  height: 100%; background-color: $main-color;
+  .links-nav{ color: $body-color; a{color:$body-color ; &:hover{color: $sec-color}}}
+  .project-title{a{color: $body-color} &:hover{a{color: $main-color;  -webkit-text-stroke: 1px $body-color; -webkit-font-smoothing: antialiased;}}}
+  .subcat{color: $body-color}
+  #nav-logo{.cls-1{fill:$body-color;}}
+  .heterodox{p{color: $body-color} a{color: $body-color ; &:hover{border-bottom: 2px solid $body-color}} #heterodox-logo{path{fill: $body-color;}}}
+  .page-footer{background-color: $main-color; color: $body-color};
+  .page-footer-mobile{background-color: $main-color; color: $body-color};
+  .info-container{.header-a{color: $body-color};p{color: $body-color} ;a{color: $sec-color}}
+  .show-project-title, .show-project-title-mobile{color: $body-color};
+  #show-project-sub{color: $body-color};
+  .show-project-body, .show-project-body-mobile{color: $body-color};
+  .in-project-nav{a{color: $body-color ; &:hover{color: $sec-color}}};
+  #arrow-inner-prev{fill: $body-color};
+  #arrow-inner-next{fill: $body-color};
+  #hamburger{.patty{background-color: $body-color}};
+  #logo-mobile{.cls-1{fill:$body-color}};
+  .inner-navigation{background-color: $main-color; color:$body-color; a{color: $body-color;}};
+  ul{li{ border-bottom: .5px solid $body-color}}
+  .inner-projects{border-bottom: 0px;}
+  #close{svg{fill:$body-color}};
+.project-title-mobile, #subcat-mobile {color: $body-color}
+.heterodox-mobile{p{color: $body-color};a{color: $body-color;} #heterodox-logo{path{fill:$body-color}}}
+.arrow-click{svg{path{fill:$body-color}}};
+.info-container-mobile{.header-a{color: $body-color}; p{color: $body-color}; a{color: $sec-color}};
+.active{  border-bottom: 1px solid $sec-color;}
+
+
+
+
+
+
+  }
