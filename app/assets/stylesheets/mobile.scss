@@ -134,4 +134,12 @@ ul {
 
 }
 
-.toggle-container-mobile{ cursor: pointer; svg{width: 20px; cursor: pointer; fill:$sec-color; } position: absolute; left: 80%;}
+.toggle-container-mobile{ cursor: pointer;
+  position: absolute; top:50% ; right: 10%;
+  svg{width: 20px;}
+  #sun{path{fill: $main-color}};
+  #moon{path{fill:$sec-color;}}
+
+
+
+}

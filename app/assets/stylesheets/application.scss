@@ -40,7 +40,7 @@ p{font-family: 'Kern-r', sans-serif; color: $sec-color; line-height: 135%;  text
     padding-top: 60px;
     display: grid;
     grid-template-columns: 20% 20% auto;
-    align-items: center;
+    align-items: baseline;
 
 }
 
@@ -66,7 +66,7 @@ p{font-family: 'Kern-r', sans-serif; color: $sec-color; line-height: 135%;  text
 }
 
 input#switch{display: none}
-.toggle-container{ cursor: pointer; svg{width: 20px; cursor: pointer; fill:$sec-color; }}
+.toggle-container{ cursor: pointer; svg{width: 25px; cursor: pointer; fill:$sec-color; }}
 
 #moon{display: none;}
 .nav-inner{position: absolute; display: none;}
@@ -95,6 +95,7 @@ opacity: 0.4;
    margin: 0;
    padding: 20px;
    background-color: $body-color;
+   opacity: .5;
 }
 .page-footer-mobile{
    position: fixed;
@@ -107,6 +108,7 @@ opacity: 0.4;
    margin: 0;
    padding: 10px;
    background-color: $body-color;
+    opacity: .5;
 }
 ///////scrollTop
 
@@ -126,7 +128,7 @@ opacity: 0.4;
 
   html[data-theme="dark"]{
 
-    
+
   height: 100%; background-color: $main-color;
   .links-nav{ color: $body-color; a{color:$body-color ; &:hover{color: $sec-color}}}
   .project-title{a{color: $body-color} &:hover{a{color: $main-color;  -webkit-text-stroke: 1px $body-color; -webkit-font-smoothing: antialiased;}}}
@@ -153,6 +155,9 @@ opacity: 0.4;
 .arrow-click{svg{path{fill:$body-color}}};
 .info-container-mobile{.header-a{color: $body-color}; p{color: $body-color}; a{color: $sec-color}};
 .active{  border-bottom: 1px solid $sec-color;}
+#previous-mobile{svg{fill:$body-color;}}
+#back-home-mobile{svg{ path{fill: $body-color}}}
+#next-mobile{svg{ fill:$body-color} }
 
 
 

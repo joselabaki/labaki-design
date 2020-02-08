@@ -29,11 +29,6 @@
   <div id="close" class="invisible"><%= inline_svg 'close.svg' %></div>
   <div id="logo-mobile" class="logo-mobile"> <%= link_to projects_path do %><%= inline_svg 'labaki-logo.svg'%> <% end %></div>
 
-  <div class="toggle-container-mobile">
-  <input type="checkbox" id="switch" name="theme" /><label for="switch"><%=inline_svg 'sun.svg' , id: 'sun'%>
-  <%= inline_svg 'moon.svg' , id:'moon' %>
-  </label>
-  </div>
 
 
   </div>
@@ -61,6 +56,12 @@
 <p class="alert"><%= alert %></p>
 
 <%= yield %>
+
+  <div class="toggle-container-mobile">
+  <input type="checkbox" id="switch" name="theme" /><label for="switch"><%=inline_svg 'sun.svg' , id: 'sun' , title:'day-mode'%>
+  <%= inline_svg 'moon.svg' , id:'moon' , tile:'night-mode' %>
+  </label>
+  </div>
 </div>
 <footer>
 <p class="page-footer-mobile">&copy; designed &amp; developed by Labaki - 2020  </p>
