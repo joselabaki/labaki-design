@@ -135,7 +135,7 @@ ul {
 }
 
 .toggle-container-mobile{ cursor: pointer;
-  position: absolute; top:50% ; right: 10%;
+  position: absolute; top:50% ; left: 10px;
   svg{width: 20px;}
   #sun{path{fill: tan}};
   #moon{path{fill:dimgray;}}
