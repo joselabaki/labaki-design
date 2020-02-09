@@ -17,7 +17,7 @@
 
 
 <div class="references"></div>
-<p class='header-a'>References</p>
+<p class='header-a'><%=t('ref') %></p>
 <% @references.each do |ref| %>
 <p class="inner-content-links"><%= link_to ref.refname , ref.reflink.html_safe , target:"_blank" %></p>
 <%end%>
