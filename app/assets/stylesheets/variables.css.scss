@@ -1,8 +1,10 @@
 
   @font-face  {
     font-family: 'Soyuz-Custom';
-    src:font-url('soyuzgrotesk-custom-webfont.woff'),
-      url('SoyuzGrotesk-Custom.ttf') format('truetype');
+    src:  url('soyuzgrotesk-custom-webfont.woff'),
+          url('SoyuzGrotesk-Custom.ttf') format('truetype'),
+          url('soyuzgrotesk-custom-webfont.woff2'),
+          local('SoyuzGrotesk-Custom.ttf');
     font-weight: normal;
     font-style: normal;
   }
