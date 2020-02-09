@@ -1,21 +1,10 @@
 
   @font-face  {
     font-family: 'Soyuz-Custom';
-    src:  url('soyuzgrotesk-custom-webfont.woff'),
-          url('SoyuzGrotesk-Custom.ttf') format('truetype'),
-          url('soyuzgrotesk-custom-webfont.woff2'),
-          local('SoyuzGrotesk-Custom.ttf');
-    font-weight: normal;
-    font-style: normal;
-  }
+    src:  font-url('soyuzgrotesk-custom-webfont.woff')format('woff'),
+          font-url('SoyuzGrotesk-Custom.ttf') format('truetype'),
+          font-url('soyuzgrotesk-custom-webfont.woff2') format('woff2'),
 
-
-  @font-face {
-      font-family: 'kernitalic';
-      src: url('kern-italic-webfont.woff2') format('woff2'),
-           url('kern-italic-webfont.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
 
   }
 
