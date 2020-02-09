@@ -64,9 +64,9 @@ p{font-family: 'Kern-r', sans-serif; color: $sec-color; line-height: 135%;  text
   }
 
 }
-
+//////////SWITCH INVERSION ////////////////////
 input#switch{display: none}
-.toggle-container{ cursor: pointer; svg{width: 25px; cursor: pointer; fill:$sec-color; }}
+.toggle-container{ cursor: pointer; svg{width: 25px; cursor: pointer; path{fill:$main-color; }}}
 
 #moon{display: none;}
 .nav-inner{position: absolute; display: none;}
@@ -76,7 +76,7 @@ input#switch{display: none}
   border-bottom: 1px solid $main-color;
 
 }
-
+//////// SWITCH INVERSION ///////////
 .active-lang{
 opacity: 0.4;
 }
@@ -128,7 +128,7 @@ opacity: 0.4;
 
   html[data-theme="dark"]{
 
-
+///////////////////////////// COLOR INVERSION //////////////////////
   height: 100%; background-color: $main-color;
   .links-nav{ color: $body-color; a{color:$body-color ; &:hover{color: $sec-color}}}
   .project-title{a{color: $body-color} &:hover{a{color: $main-color;  -webkit-text-stroke: 1px $body-color; -webkit-font-smoothing: antialiased;}}}
@@ -158,6 +158,7 @@ opacity: 0.4;
 #previous-mobile{svg{fill:$body-color;}}
 #back-home-mobile{svg{ path{fill: $body-color}}}
 #next-mobile{svg{ fill:$body-color} }
+.toggle-container, .toggle-container-mobile{svg{path{fill:$body-color;}}}
 
 
 

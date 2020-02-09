@@ -133,13 +133,9 @@ ul {
 .contact{margin-top: 30px;}
 
 }
-
+///////// SWITCH INVERSION /////
 .toggle-container-mobile{ cursor: pointer;
   position: absolute; top:55% ; right: 25px;
-  svg{width: 20px;}
-  #sun{path{fill: tan}};
-  #moon{path{fill:dimgray;}}
-
-
-
+  svg{width: 20px;path{fill:$main-color; }}
 }
+///// SWITTCH INVERSION ////
