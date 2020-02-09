@@ -111,7 +111,7 @@ opacity: 0.4;
     opacity: .5;
 }
 ///////scrollTop
-
+//////INFO PAGE/////
 .about-text{
   width: 45%;
 }
@@ -124,11 +124,15 @@ opacity: 0.4;
 }
 }
 
-  .contact{margin-top: 80px;}
+  .contact, .references{margin-top: 80px;}
+.inner-content-links{line-height: 90%;}
+
+
+  ///////////////////////////// COLOR INVERSION //////////////////////
+
 
   html[data-theme="dark"]{
 
-///////////////////////////// COLOR INVERSION //////////////////////
   height: 100%; background-color: $main-color;
   .links-nav{ color: $body-color; a{color:$body-color ; &:hover{color: $sec-color}}}
   .project-title{a{color: $body-color} &:hover{a{color: $main-color;  -webkit-text-stroke: 1px $body-color; -webkit-font-smoothing: antialiased;}}}

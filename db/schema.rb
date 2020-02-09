@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_06_102130) do
+ActiveRecord::Schema.define(version: 2020_02_09_213931) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -70,6 +70,13 @@ ActiveRecord::Schema.define(version: 2020_02_06_102130) do
     t.integer "leftposmobile"
     t.string "alttext"
     t.index ["slug"], name: "index_projects_on_slug"
+  end
+
+  create_table "references", force: :cascade do |t|
+    t.string "refname"
+    t.string "reflink"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

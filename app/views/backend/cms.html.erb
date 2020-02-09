@@ -15,5 +15,27 @@
  </tr>
  <% end %>
 </table>
-<%= link_to('Create', new_project_path) %>
+<%= link_to('Create Project', new_project_path) %>
+
+
+
+
+
+<hr>
+<table>
+  <tr>
+ <th>Reference Name</th>
+ <th>Show</th>
+ <th>Edit</th>
+ <th>Destroy</th>
+ <% @references.each do |p| %>
+ <tr>
+ <td> <%= p.refname %> </td>
+ <td> <%= link_to 'Show' ,  reference_path(p) %></td>
+ <td> <%= link_to 'Edit', edit_reference_path(p) %></td>
+ <td> <%= link_to 'Delete', reference_path(p),method: :delete, data: { confirm: 'Are you sure?' } %> </td>
+ </tr>
+ <% end %>
+</table>
+<%= link_to('Create Reference', new_reference_path) %><br>
 <%= link_to('Logout', destroy_admin_session_path, method: :delete) %>

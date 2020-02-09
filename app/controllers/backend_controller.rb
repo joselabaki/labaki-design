@@ -5,6 +5,6 @@ class BackendController < ApplicationController
 
   def cms
     @projects = Project.all
-
+    @references = Reference.all
   end
 end

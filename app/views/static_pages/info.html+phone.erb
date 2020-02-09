@@ -14,4 +14,11 @@
   <br> <%= t('byphone') %> <a href="tel:+961 70 047 045">+961 70 047 045</a>
   </p>
 </div>
+
+
+<div class="references">
+<p class='header-a'>References</p>
+<% @references.each do |ref| %>
+<p class="inner-content-links"><%= link_to ref.refname , ref.reflink.html_safe , target:"_blank" %></p>
+<%end%>
 </div>

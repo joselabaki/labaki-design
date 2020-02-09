@@ -8,6 +8,7 @@ class ProjectsController < ApplicationController
     @projects = Project.all.order(created_at: :desc)
   end
 end
+
   def new
     @project = Project.new
   end
@@ -56,5 +57,5 @@ end
 private
 
 def project_params
-  params.require(:project).permit(:title, :body ,:alttext , :description,  {images: []}, :category, :subcategory , {thumbnails: []}, :nouveau , :code , :topos , :leftpos , :toposmobile , :leftposmobile)
+  params.require(:project).permit(:title, :body ,:alttext  , :description,  {images: []}, :category, :subcategory , {thumbnails: []}, :nouveau , :code , :topos , :leftpos , :toposmobile , :leftposmobile)
 end

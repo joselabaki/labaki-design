@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def info
+    @references = Reference.all
   end
 
   def contact

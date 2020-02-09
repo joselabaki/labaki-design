@@ -130,8 +130,8 @@ ul {
   .header-a{font-family: 'Kern-b' ; color: $sec-color; font-size: 18px; margin-bottom: 0px;}
   p{ margin: 10px 0px;   a{ color: $main-color}
 }
-.contact{margin-top: 30px;}
-
+.contact, .references {margin-top: 40px;}
+.inner-content-links{line-height: 110%}
 }
 ///////// SWITCH INVERSION /////
 .toggle-container-mobile{ cursor: pointer;

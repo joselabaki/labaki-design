@@ -1,0 +1,25 @@
+<%= form_with(model: reference, local: true) do |form| %>
+  <% if reference.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(reference.errors.count, "error") %> prohibited this reference from being saved:</h2>
+
+      <ul>
+      <% reference.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <p>
+    <%= form.label :refname , "Name"  %>
+    <%= form.text_area :refname ,size: "40x1"%>
+
+    <%= form.label :reflink , "Link" %>
+      <%= form.text_area :reflink , size: "50x1" , placeholder: "Include http:// or https://"%>
+  </p>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
