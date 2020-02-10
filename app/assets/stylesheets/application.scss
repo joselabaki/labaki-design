@@ -84,20 +84,6 @@ opacity: 0.4;
   &:hover{border: none;}
 }
 
-.page-footer , .page-footer-mobile{
-   position: fixed;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   text-align: center;
-   font-size: 10px;
-   color: $sec-color;
-   margin: 0;
-   padding: 10px;
-   background-color: $body-color;
-   span{opacity: 0.5;}
-}
-.page-footer-mobile{font-size: 9px;}
 ///////scrollTop
 //////INFO PAGE/////
 .about-text{
