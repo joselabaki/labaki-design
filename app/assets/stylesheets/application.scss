@@ -92,6 +92,7 @@ opacity: 0.4;
 
 
 .info-container{
+  a{&:hover{color: $sec-color}}
   margin-top: 70px;  font-size: 17px;
   .header-a{font-family: 'Kern-b' ; color: $sec-color; font-size: 20px; margin-bottom: 0px;}
   p{ margin: 10px 0px;   a{ color: $main-color}
@@ -137,8 +138,7 @@ opacity: 0.4;
 #back-home-mobile{svg{ path{fill: $body-color}}}
 #next-mobile{svg{ fill:$body-color} }
 .toggle-container, .toggle-container-mobile{svg{path{fill:$body-color;}}}
-
-
+.info-container{a{&:hover{color: $body-color}}}
 
 
 
