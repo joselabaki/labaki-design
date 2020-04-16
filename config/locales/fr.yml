@@ -17,7 +17,8 @@ fr:
           De nos jours, tous les studios semblent avoir adoptés la nouvelle définition du design. Ils dépassent l'esthétique et les apparences et s'intéressent à l’essentiel, au problématique. Cette transition incite les professionnels à élargir leurs horizons, leur méthode devient holistique et leurs travaux, multidisciplinaires. Les studio créent alors tout artefact - produits, graphisme, systèmes -  qui puisse répondre à un enjeu. Et nous? Nous faisions pareil. Non?
   reach-out: 'Disponible sur'
   medium: 'par'
-  byphone: 'ou au téléphone'
+  byphone: 'ou '
+  device-call: 'téléphone.'
   about: 'À propos'
   desc: >
     Labaki est un studio de design multidisciplinaire engagé à améliorer l'habitabilité du monde. Comme tous les autres, non?
