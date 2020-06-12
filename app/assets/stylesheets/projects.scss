@@ -66,14 +66,14 @@ display: none;
   padding: 20px 0px;
   border-top: 1px dotted $main-color;
   border-bottom: 1px dotted $main-color;
-  text-rendering:optimizeLegibility;
+
 
 }
 
 .show-project-thumb{margin-bottom: 30px;}
 #show-project-sub{
-  font-family: 'Kern-r';
-  text-rendering:optimizeLegibility;
+  font-family: 'Kern-b';
+
 }
 
 
@@ -91,8 +91,7 @@ display: none;
 
   a{
     font-family: 'Kern-r' , sans-serif;
-    text-rendering:optimizeLegibility;
-    text-transform:uppercase;
+
     text-decoration: none;
     color: $main-color;
     font-size: .9em;
