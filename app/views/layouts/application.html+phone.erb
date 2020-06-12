@@ -27,15 +27,22 @@
     <div class="patty"></div>
   </div>
   <div id="close" class="invisible"><%= inline_svg 'close.svg' %></div>
-  <div id="logo-mobile" class="logo-mobile"> <%= link_to projects_path do %><%= inline_svg 'labaki-logo.svg'%> <% end %></div>
+  <div id="logo-mobile" class="logo-mobile"> <%= link_to projects_path do %><%= inline_svg 'labaki-logo.svg'%> <% end %>
+
+
+  </div>
+
   <div class="toggle-container-mobile">
   <input type="checkbox" id="switch" name="theme" /><label for="switch"><%=inline_svg 'sun.svg' , id: 'sun' , title:'day-mode'%>
   <%= inline_svg 'moon.svg' , id:'moon' , tile:'night-mode' %>
   </label>
   </div>
-
-
   </div>
+
+
+
+
+
   <div class="inner-navigation ">
   <ul>
     <li> <ul id="inner-projects">Projects
