@@ -28,7 +28,11 @@
   </div>
   <div id="close" class="invisible"><%= inline_svg 'close.svg' %></div>
   <div id="logo-mobile" class="logo-mobile"> <%= link_to projects_path do %><%= inline_svg 'labaki-logo.svg'%> <% end %></div>
-
+  <div class="toggle-container-mobile">
+  <input type="checkbox" id="switch" name="theme" /><label for="switch"><%=inline_svg 'sun.svg' , id: 'sun' , title:'day-mode'%>
+  <%= inline_svg 'moon.svg' , id:'moon' , tile:'night-mode' %>
+  </label>
+  </div>
 
 
   </div>
@@ -45,7 +49,10 @@
     <li class="languages"><%= link_to_unless_current 'EN' , locale: 'en' %> | <%= link_to_unless_current 'FR' , locale: 'fr' %></li>
   </ul>
 </div>
+
 </div>
+
+
 </div>
 
 
@@ -57,11 +64,6 @@
 
 <%= yield %>
 
-  <div class="toggle-container-mobile">
-  <input type="checkbox" id="switch" name="theme" /><label for="switch"><%=inline_svg 'sun.svg' , id: 'sun' , title:'day-mode'%>
-  <%= inline_svg 'moon.svg' , id:'moon' , tile:'night-mode' %>
-  </label>
-  </div>
 
 </div>
 

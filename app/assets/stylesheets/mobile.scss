@@ -140,8 +140,11 @@ display: none;
 .inner-content-links{line-height: 110%}
 }
 ///////// SWITCH INVERSION /////
-.toggle-container-mobile{ cursor: pointer;
-  position: absolute; top:55% ; right: 25px;
+.toggle-container-mobile{
+  position: relative;
+  top: 5px;
+  left: 180px;
+  cursor: pointer;
   svg{width: 20px;path{fill:$main-color; }}
 }
 ///// SWITTCH INVERSION ////
