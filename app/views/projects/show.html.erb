@@ -11,7 +11,11 @@
 
 <div class="images-block">
 <% @project.images.each do |i| %>
-<div><%= image_tag (i.url), alt: i.file.filename.split('.')[0] %></div>
+<div><%= image_tag (i.url), alt: i.file.filename.split('.')[0] %>
+
+<p id="legende"><%= i.file.filename.split('.')[0] %></p>
+</div>
+
 <% end %>
 </div>
 

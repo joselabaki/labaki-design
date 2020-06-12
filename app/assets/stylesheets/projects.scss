@@ -82,7 +82,7 @@ display: none;
 
 #back-home{ font-family: 'Kern-r' , sans-serif;}
 .show-project{display: grid;}
-.images-block{img{width: 1000px;margin-bottom: 25px;}}
+.images-block{img{width: 1000px;}}
 
 .in-project-nav{
   margin: 60px 0px;
@@ -113,3 +113,5 @@ display: none;
 #arrow-inner-prev{transform: rotate(180deg); padding-left: 30px; fill: $main-color; display: flex;align-self: center;}
 #arrow-inner-next{padding-left: 30px; fill: $main-color;display:flex; align-self: center;}
 /////////////////
+
+#legende{font-family: 'Kern-i';margin-top: 0px;margin-bottom: 30px; color: $sec-color;}

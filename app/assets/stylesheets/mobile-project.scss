@@ -25,10 +25,12 @@
 }
 
 .images-block-mobile{
-img{width: 94%; padding-bottom: 20px;}
+img{width: 94%;}
 }
 
-#subcat-mobile{font-family: 'Kern-r' , sans-serif;font-size: .85em; color: $main-color;}
+#subcat-mobile{font-family: 'Kern-b' , sans-serif;font-size: .85em; color: $main-color;}
+#subcat-mobile-index{font-family: 'Kern-r' , sans-serif;font-size: .85em; color: $main-color;}
+
 
 .in-project-nav-mobile{
   display: grid;

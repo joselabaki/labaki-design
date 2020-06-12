@@ -20,7 +20,7 @@ body{ margin: 0;padding: 0;
   scroll-behavior: smooth;}
 
 
-p{font-family: 'Kern-r', sans-serif; color: $sec-color; line-height: 135%; 
+p{font-family: 'Kern-r', sans-serif; color: $sec-color; line-height: 135%;
 }
 
 .main-container{
@@ -139,7 +139,8 @@ opacity: 0.4;
 #next-mobile{svg{ fill:$body-color} }
 .toggle-container, .toggle-container-mobile{svg{path{fill:$body-color;}}}
 .info-container{a{&:hover{color: $body-color}}}
-
+.show-project-body-mobile{border-bottom: 1px dotted $body-color;border-top: 1px dotted $body-color;}
+#legende , #legende-mobile{color: $body-color;}
 
 
 
