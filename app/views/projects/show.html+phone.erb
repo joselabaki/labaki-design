@@ -10,7 +10,7 @@
 
 <div class="images-block-mobile ">
 <% @project.images.each do |i| %>
-<div><%= image_tag (i.url)%></div>
+<div><%= image_tag (i.url) , alt: i.file.filename.split('.')[0]%></div>
 <% end %>
 </div>
 

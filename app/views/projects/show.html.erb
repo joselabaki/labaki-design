@@ -5,13 +5,13 @@
 <div class="project-texts">
   <p class="show-project-title" id="project-title"><%= @project.title%></p>
   <p id="show-project-sub"><%= @project.subcategory %></p>
-  <p class="show-project-body"><%= @project.body.html_safe%></p>
+  <p class="show-project-body"><%=raw  @project.body%></p>
 </div>
 
 
 <div class="images-block">
 <% @project.images.each do |i| %>
-<div><%= image_tag (i.url) %></div>
+<div><%= image_tag (i.url), alt: i.file.filename.split('.')[0] %></div>
 <% end %>
 </div>
 
