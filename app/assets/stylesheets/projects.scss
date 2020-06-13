@@ -95,7 +95,7 @@ display: none;
 
     text-decoration: none;
     color: $main-color;
-    font-size: .9em;
+    font-size: 1em;
   }
 }
 
@@ -107,7 +107,7 @@ display: none;
 &:hover{color: $sec-color; path{fill:$sec-color}}
 }
 
-.back-home{justify-self: center; a{&:hover{color: $sec-color}}}
+.back-home{text-transform: uppercase;justify-self: center; a{&:hover{color: $sec-color}}}
 
 
 .arrow-inner{width:50px;}
