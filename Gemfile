@@ -71,3 +71,4 @@ gem 'browser'
 gem 'inline_svg'
 gem 'jquery-rails'
 gem "mini_magick"
+gem "fog-aws"
