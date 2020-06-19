@@ -4,9 +4,9 @@
 <div class="single-project-mobile <%= p.title.parameterize%>">
       <div class="project-info"><div class="project-title-mobile"> <%= p.title %></div><div id="subcat-mobile-index"><%= p.subcategory %></div></div>
       <div class="arrow-click invisible" id="<%=p.title.parameterize%>-arrow"> <%= link_to project_path(p) do%> <%= inline_svg 'arrow-click.svg'%> <%end%></div>
-
-      <% p.thumbnails.each do |th| %><div style="top:<%= p.toposmobile %>px ; left:<%= p.leftposmobile%>px" class="thumbails-index-mobile invisible" id= "<%=p.code%>-thumb-mobile" ><%= image_tag (th.url) , alt: th.file.filename.split('.')[0]%></div><% end %>
-
+      <%= link_to project_path(p) do%>
+      <% p.thumbnails.each do |th| %><div style="top:<%= p.toposmobile %>px ; left:<%= p.leftposmobile%>px" class="thumbails-index-mobile invisible" id= "<%=p.code%>-thumb-mobile" ><%= image_tag (th.url) , alt: th.file.filename.split('.')[0]%></div>
+      <% end %> <% end %>
 </div>
 
 <%end%>

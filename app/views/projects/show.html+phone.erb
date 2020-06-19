@@ -27,8 +27,8 @@
 
 
 <% if @project.next %>
-  <div id="next-mobile"><%= link_to @project.next do %><%= inline_svg 'arrow-click.svg' , id: "inner-next" %> <%end%></div>
-<%else%> <div></div> <%end%>
+  <div id="next-mobile"><%= link_to @project.next do %><%= inline_svg 'arrow-click.svg' , id: "inner-next" %> <% end %></div>
+<% else %> <div></div> <% end %>
 
 </div>
 
