@@ -144,10 +144,10 @@ display: none;
 ///////// SWITCH INVERSION /////
 .toggle-container-mobile{
 
-  svg{width: 20px;path{fill:$main-color; }}
+  svg{width: 20px;path{fill:$main-color; } margin-left:100px;}
 }
 ///// SWITTCH INVERSION ////
 
-#legende-mobile{font-family: 'Kern-i';margin-top: 0px;margin-bottom: 25px; color: $sec-color; font-size: .75em;}
+#legende-mobile{font-family: 'Kern-r';margin-top: 0px;margin-bottom: 25px; color: $sec-color; font-size: .7em;}
 
 //////spacer////
