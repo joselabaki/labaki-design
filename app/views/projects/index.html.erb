@@ -1,8 +1,16 @@
 <% provide(:title, t('home')) %>
 
 <% @projects.each do |p| %>
+<%if p.nouveau?%> <div class="single-project <%= p.title.parameterize%> nouveau"><%end%>
 
 <div class="single-project <%= p.title.parameterize%>">
+
+ 
+
+
+
+
+
     <div class="project-info">
       <div class="project-title"> <%= link_to project_path(p) do %><%= p.title %><%end%> </div>
     </div> <div class="subcat"><%= p.subcategory %> </div>
@@ -30,9 +38,6 @@ $('#<%=p.code%>-thumb').show()});
 $('.<%=p.title.parameterize %>  ').mouseleave(function(){
 $('#<%=p.code%>-thumb').hide()});
 
-<%if p.nouveau?%> 
-$('.project-title').addClass('nouveau')
-<%end%>
 
 </script>
 <%end %>
