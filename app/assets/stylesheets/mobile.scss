@@ -121,7 +121,6 @@ display: none;
 }
 
 
-  .heterodox-mobile-active{opacity: 1;}
   .subcat-mobile{margin-left: 10px; font-family: 'Kern-r' , sans-serif; font-size: .8em; color: $main-color; align-items: baseline; text-transform: capitalize;}
 
 .arrow-click{
@@ -144,7 +143,7 @@ display: none;
 ///////// SWITCH INVERSION /////
 .toggle-container-mobile{
 
-  svg{width: 20px;path{fill:$main-color; } margin-left:100px;}
+  svg{width: 20px;path{fill:$main-color; }}
 }
 ///// SWITTCH INVERSION ////
 

@@ -32,24 +32,6 @@ a{ text-decoration: none;color: $main-color;
 }
 hr{ color: $main-color; margin-top:0px;}
 
-  ///////HETERODOX EASTER EGG////////////
-
-  .heterodox{
-//    position: fixed;
-  //  bottom: 80px;
-    opacity: .1;
-    margin-top: 100px;
-    color: $sec-color;
-    width: 20%;
-    font-size: .9em;
-    a{text-decoration: none; color: $sec-color}
-    #heterodox-logo{width:50%; path{fill: $sec-color;}}
-    #heterodox-text{margin-top: 5px;}
-    &:hover{ opacity: 1;
-    a{&:hover{border-bottom: 2px solid $sec-color ; padding-bottom: 5px;}
-    }}
-display: none;
-  }
 
 ////////////////////////////SHOW//////
 .show-project-title{
