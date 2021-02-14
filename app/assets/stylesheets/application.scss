@@ -142,5 +142,23 @@ opacity: 0.4;
 #legende , #legende-mobile{color: $body-color;}
 #subcat-mobile-index{color: $body-color}
 
+.nouveau-mobile { 
+
+.project-title-mobile , #subcat-mobile-index{ 
+color: $new-project;}}
+
+.nouveau { 
+
+a{ text-decoration: none;color: $new-project;
+
+&:hover{ color: $body-color; -webkit-text-stroke: 1px $new-project;     -webkit-font-smoothing: antialiased;}}
+
+.subcat {color: $new-project}
+
+}
+
+
+
+
 
   }
