@@ -1,10 +1,10 @@
 <% provide(:title, t('home')) %>
 
 <% @projects.each do |p| %>
-<%if p.nouveau?%> <div class="single-project <%= p.title.parameterize%> nouveau"><%end%>
-
+<%if p.nouveau?%> <div class="single-project <%= p.title.parameterize%> nouveau">
+<%else%>
 <div class="single-project <%= p.title.parameterize%>">
-
+<%end%>
  
 
 
