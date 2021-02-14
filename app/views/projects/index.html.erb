@@ -14,15 +14,12 @@
       </div>
 
       <% end %>
+
+
 </div>
 
 <%end%>
 
-<div class="heterodox">
-  <%= inline_svg "heterodox.svg" , id: 'heterodox-logo' %>
-  <p id="heterodox-text"><%= t ".heterodox" %></p>
-  <p><%=link_to t('.heterodox-link') , t('website-h') , target: "_blank" %></p>
-</div>
 
 
 <% @projects.each do |p| %>
@@ -33,6 +30,9 @@ $('#<%=p.code%>-thumb').show()});
 $('.<%=p.title.parameterize %>  ').mouseleave(function(){
 $('#<%=p.code%>-thumb').hide()});
 
+<%if p.nouveau?%> 
+$('.project-title').addClass('nouveau')
+<%end%>
 
 </script>
 <%end %>

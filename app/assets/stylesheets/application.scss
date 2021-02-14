@@ -113,7 +113,6 @@ opacity: 0.4;
   .project-title{a{color: $body-color} &:hover{a{color: $main-color;  -webkit-text-stroke: 1px $body-color; -webkit-font-smoothing: antialiased;}}}
   .subcat{color: $body-color}
   #nav-logo{.cls-1{fill:$body-color;}}
-  .heterodox{p{color: $body-color} a{color: $body-color ; &:hover{border-bottom: 2px solid $body-color}} #heterodox-logo{path{fill: $body-color;}}}
   .page-footer{background-color: $main-color; color: $body-color};
   .page-footer-mobile{background-color: $main-color; color: $body-color};
   .info-container{.header-a{color: $body-color};p{color: $body-color} ;a{color: $sec-color}}
@@ -130,7 +129,7 @@ opacity: 0.4;
   .inner-projects{border-bottom: 0px;}
   #close{svg{fill:$body-color}};
 .project-title-mobile, #subcat-mobile {color: $body-color}
-.heterodox-mobile{p{color: $body-color};a{color: $body-color;} #heterodox-logo{path{fill:$body-color}}}
+
 .arrow-click{svg{path{fill:$body-color}}};
 .info-container-mobile{.header-a{color: $body-color}; p{color: $body-color}; a{color: $sec-color}};
 .active{  border-bottom: 1px solid $sec-color;}
