@@ -1,14 +1,10 @@
 <% provide(:title, t('home')) %>
 <% @projects.each do |p| %>
 
-<%if p.nouveau?%> <div class="single-project <%= p.title.parameterize%> nouveau">
-<%else%>
-<div class="single-project <%= p.title.parameterize%>">
-<%end%>
 
 
-
-
+<%if p.nouveau?%> <div class="single-project <%= p.title.parameterize%> nouveau-mobile"><%else%>
+<div class="single-project-mobile <%= p.title.parameterize%>"><%end%>
 
       <div class="project-info"><div class="project-title-mobile"> <%= p.title %></div><div id="subcat-mobile-index"><%= p.subcategory %></div></div>
       <div class="arrow-click invisible" id="<%=p.title.parameterize%>-arrow"> <%= link_to project_path(p) do%> <%= inline_svg 'arrow-click.svg'%> <%end%></div>
@@ -19,11 +15,6 @@
 
 <%end%>
 
-<div class="heterodox-mobile">
-  <%= inline_svg "heterodox.svg" , id: 'heterodox-logo' %>
-  <p id="heterodox-text"><%= t ".heterodox" %></p>
-  <p><%=link_to t('.heterodox-link') , t('website-h') , target: "_blank" %></p>
-</div>
 
 <script type="text/javascript" data-turbolinks-eval=false>
 
@@ -49,16 +40,6 @@
 
 }});
 
-
-
-$('.heterodox-mobile').click(function(){
-  $(this).addClass('heterodox-mobile-active')
-});
-
-$(document).click(function(event) {
-  if (!$(event.target).closest(".heterodox-mobile").length) {
-    $('.heterodox-mobile').removeClass('heterodox-mobile-active')
-  }});
 
 
 <%end%>
