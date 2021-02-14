@@ -33,6 +33,8 @@ body{overflow-x: hidden;}
 #logo-mobile{padding: 1px 0; margin-left: 20px; width: 60px; .cls-1{fill:$sec-color}; margin-right: 150px;}
 
 .top{display: inline-flex; padding: 1px 0; align-items:center;}
+
+
 .inner-navigation{
   display: none;
   position: absolute;
@@ -40,21 +42,21 @@ body{overflow-x: hidden;}
   font-family: 'Kern-r', sans-serif;
   color: $main-color;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.6em;
   a{text-decoration: none; color: $main-color;}
    line-height: 30px;
    padding: 10px;
    padding-left: 0px;
    padding-bottom: 0px;
-   top:64px;
+   top:80px;
    left: 10px;
    box-sizing:content-box;
    width: 300px;
    height: 500px;
 }
+
 .all-links{
   margin-right: 40px;
-
 }
 
 
@@ -62,9 +64,11 @@ ul {
   list-style-type: none;
   margin: 0;
   padding:  0px;
+  margin-top:30px;
   li{
-    padding-bottom: 3px;
-    border-bottom: .5px solid $main-color;
+    padding-bottom: 15px;
+      margin-left:30px;
+
 }
 }
 
