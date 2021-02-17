@@ -127,30 +127,5 @@ a{ text-decoration: none;color: $new-project;
 .logo-footer{width: 25% ; .cls-1{fill:$sec-color;}}
 .copyright{font-size: 0.8em; }
 .contacts {a {text-decoration: none; color : $sec-color}}
-.newsletter{justify-self: end;}
+.newsletter{}
 }
-
-#mc_embed_signup_scroll{
-  display: inline-flex;
-  align-items: baseline;
-}
-#mce-EMAIL {
-border: none;
-background: none;
-margin: 20px 0;
-color: $sec-color;
-font-family: 'Kern-r' , sans-serif;
-border-bottom: 1px solid $main-color;
-width: 300px;
-}
-
-.submit-btn{
-input{
-
-border: none;
-text-decoration:none;
-padding: 0;
-color: $main-color;
-font-family: 'Kern-r' , sans-serif;
-font-size: 20px;
-}}

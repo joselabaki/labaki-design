@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  post 'emailapi/subscribe' => 'emailapi#subscribe'
 
   devise_for :admins
 

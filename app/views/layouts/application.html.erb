@@ -55,24 +55,10 @@
   </div>
   <div class="newsletter">Sign up for updates<br>
 
-    <!-- Begin Mailchimp Signup Form -->
-
-    <div id="mc_embed_signup">
-    <form action="https://design.us1.list-manage.com/subscribe/post?u=9f43aa7695091920cd4225d9d&amp;id=fb8c3001ac" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-
-    	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your Email" required>
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9f43aa7695091920cd4225d9d_fb8c3001ac" tabindex="-1" value=""></div>
-        <div class="submit-btn"><input type="submit" value=">"></div>
-
-
-        </div>
-    </form>
-    </div>
-
-    <!--End mc_embed_signup-->
-
+    <%= form_tag('/emailapi/subscribe', method: "post", id: "subscribe", remote: "true") do -%>
+       <%= email_field(:email, :address, {id: "email", placeholder: "email address"}) %>
+       <%= submit_tag("Sign me up!") %>
+    <% end %>
 
 
 
