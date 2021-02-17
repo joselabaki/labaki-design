@@ -73,3 +73,4 @@ gem 'jquery-rails'
 gem "mini_magick"
 gem "fog-aws"
 gem 'gibbon', :git => 'https://github.com/amro/gibbon.git'
+gem 'figaro'

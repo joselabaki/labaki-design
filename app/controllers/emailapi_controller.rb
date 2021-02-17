@@ -5,7 +5,7 @@ require 'gibbon'
 
 
  def subscribe
-   @list_id = ENV["fb8c3001ac"]
+   @list_id = ENV["mc_list_id"]
  gibbon = Gibbon::Request.new
 
 gibbon.lists(@list_id).members.create(
