@@ -48,12 +48,45 @@
 
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
-<div class="footer-desk">Footer</div>
+<%= yield %>
+<div class="footer-desk">
+  <div class="logo-footer"><%= link_to projects_path do %> <%= inline_svg 'labaki-logo.svg' , title: t('home')%> <% end %></div>
+  <div class="contacts"><%=link_to 'Instagram' , 'https://www.instagram.com/labaki_design/' , target: "_blank" %><br>  <%=link_to 'Twitter' , 'https://twitter.com/labaki_design' %>
+  </div>
+  <div class="newsletter">Sign up for updates<br>
+
+    <!-- Begin Mailchimp Signup Form -->
+
+    <div id="mc_embed_signup">
+    <form action="https://design.us1.list-manage.com/subscribe/post?u=9f43aa7695091920cd4225d9d&amp;id=fb8c3001ac" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+
+    	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your Email" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9f43aa7695091920cd4225d9d_fb8c3001ac" tabindex="-1" value=""></div>
+        <div class="submit-btn"><input type="submit" value=">"></div>
 
 
-    <%= yield %>
+        </div>
+    </form>
+    </div>
+
+    <!--End mc_embed_signup-->
+
+
+
+
+
+
+
+
+
 
   </div>
+  <div class="copyright">&copy; 2021 Labaki Design <br> All Rights Reserved</div>
+
+  </div>
+
 
   </body>
 
