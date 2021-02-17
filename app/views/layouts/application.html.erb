@@ -56,16 +56,12 @@
   <div class="newsletter">Sign up for updates<br>
 
     <%= form_tag('/emailapi/subscribe', method: "post", id: "subscribe", remote: "true") do -%>
-       <%= email_field(:email, :address, {id: "email", placeholder: "email address"}) %>
-       <%= submit_tag("Sign me up!") %>
+      <div class="email_field">
+
+      <%= email_field(:email, :address, {id: "email-field", placeholder: "Your email"}) %>
+      <%= submit_tag("Sign up", {id: "submit_btn"}) %>
+</div>
     <% end %>
-
-
-
-
-
-
-
 
 
   </div>
