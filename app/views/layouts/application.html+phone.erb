@@ -72,6 +72,37 @@
 <%= yield %>
 
 
+<div class="footer-desk-mobile">
+  <div class="logo-footer"> <%= inline_svg 'labaki-logo.svg' %></div>
+  <div class="newsletter">Newsletter<br>
+
+    <%= form_tag('/emailapi/subscribe', method: "post", id: "subscribe", remote: "true") do -%>
+      <div class="email_field">
+
+      <%= email_field(:email, :address, {id: "email-field", placeholder: "Your email"}) %>
+      <%= submit_tag("Sign up", {id: "submit_btn"}) %>
+    </div>
+
+      <% end %>
+
+</div>
+  <div class="contacts"><p>Follow</p>
+
+    <%=link_to 'Instagram' , 'https://www.instagram.com/labaki_design/' , target: "_blank" %><br>  <%=link_to 'Twitter' , 'https://twitter.com/labaki_design' %>
+  </div>
+
+    <div class="copyright">&copy; 2021 Labaki Design <br> All Rights Reserved</div>
+
+</div>
+
+<script type="text/javascript">
+$('#submit_btn').click(function(){
+$("#submit_btn").val("Subscribed");
+});
+
+</script>
+
+
 </div>
 
 
