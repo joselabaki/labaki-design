@@ -182,5 +182,6 @@ margin-bottom: 20px;
 #submit_btn{width: 90px; border:none; background: none; border:1px solid $main-color; padding:5px; margin-left: 15px;  font-family: 'Kern-b' , sans-serif;
  font-size:.9em;color: $sec-color; justify-self:end;
 &:hover{background-color: $main-color; color: $body-color}
-}
+};
+.copyright{font-size: .6em; opacity: .7;}
 }
