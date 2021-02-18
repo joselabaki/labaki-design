@@ -156,7 +156,7 @@ color: $new-project;}
 ///////////////////////footer-
 .footer-desk-mobile{
   border-top: 1px solid $main-color;
-  padding-top: 20px;
+  padding-top: 40px;
 margin-top: 300px;
   width: 90%;
   margin-bottom: 50px;
@@ -179,7 +179,7 @@ margin-bottom: 20px;
   font-size: .95em;
   border:none; color: $sec-color; background: none; border-bottom: 1px solid $main-color; padding-bottom: 5px;}
 }
-#submit_btn{width: 90px; border:none; background: none; border:1px solid $main-color; padding:8px; margin-left: 15px;  font-family: 'Kern-b' , sans-serif;
+#submit_btn{width: 90px; border:none; background: none; border:1px solid $main-color; padding:5px; margin-left: 15px;  font-family: 'Kern-b' , sans-serif;
  font-size:.9em;color: $sec-color; justify-self:end;
 &:hover{background-color: $main-color; color: $body-color}
 }
