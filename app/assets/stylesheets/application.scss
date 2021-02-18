@@ -172,10 +172,11 @@ color: $body-color;
 .footer-desk-mobile{
   border-top: 1px solid $body-color;
   color: $body-color;
+  p{color: $body-color}
 .logo-footer{.cls-1{fill:$body-color;}}
 .contacts {
 
-p{color: $body-color}
+
   a { color : $body-color; } }
 .newsletter{
 #email-field{color: $body-color; border-bottom: 1px solid $body-color; }}
