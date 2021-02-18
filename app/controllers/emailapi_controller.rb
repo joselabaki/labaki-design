@@ -13,10 +13,13 @@ gibbon.lists(@list_id).members.create(
     email_address: params[:email][:address],
     status: "subscribed"
   }
-)
+ )
+
+
 
 respond_to do |format|
   format.json{render :json => {:message => "You have been Successfully added to the list! :)"}}
     end
   end
+
 end

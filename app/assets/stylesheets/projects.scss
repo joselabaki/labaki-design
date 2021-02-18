@@ -116,7 +116,7 @@ a{ text-decoration: none;color: $new-project;
   position: fixed;
   bottom:0;
   width: 1200px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   height: 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -124,17 +124,17 @@ a{ text-decoration: none;color: $new-project;
   color: $sec-color;
   font-family: 'Kern-r' , sans-serif;
 
-.logo-footer{width: 25% ; .cls-1{fill:$sec-color;}}
+.logo-footer{width: 20% ; .cls-1{fill:$main-color;}}
 .copyright{font-size: 0.8em; }
-.contacts {a {text-decoration: none; color : $sec-color}}
-.newsletter{ justify-self:end;
+.contacts {a { text-decoration: none; color : $sec-color; &:hover{text-decoration: underline;}} }
+.newsletter{ justify-self:end; font-family: 'Kern-b', sans-serif;
 #email-field{
   font-family: 'Kern-r' , sans-serif;
   margin-top: 10px;
-  font-size:.9em;
+  font-size: .95em;
   border:none; color: $sec-color; background: none; border-bottom: 1px solid $main-color; padding-bottom: 5px;}
 }
-#submit_btn{width: 150px; border:none; background: none; border:1px solid $main-color; padding:9px; margin-left: 15px;  font-family: 'Kern-r' , sans-serif;
+#submit_btn{width: 150px; border:none; background: none; border:1px solid $main-color; padding:8px; margin-left: 15px;  font-family: 'Kern-b' , sans-serif;
  font-size:.9em;color: $sec-color;
 &:hover{background-color: $main-color; color: $body-color}
 }
