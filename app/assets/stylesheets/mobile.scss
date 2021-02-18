@@ -163,11 +163,11 @@ margin-top: 300px;
   height: auto;
   color: $sec-color;
   font-family: 'Kern-r' , sans-serif;
-
+  p{font-family: 'Kern-b', sans-serif; margin-bottom: 0px;}
 .logo-footer{width: 30% ; .cls-1{fill:$main-color;}}
 .copyright{font-size: 0.8em; }
 .contacts {
-  p{font-family: 'Kern-b', sans-serif; margin-bottom: 0px;}
+
   a { text-decoration: none; color : $sec-color; &:hover{text-decoration: underline;}}
 margin-bottom: 20px;
 }
