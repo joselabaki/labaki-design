@@ -156,6 +156,7 @@ color: $new-project;}
 ///////////////////////footer-
 .footer-desk-mobile{
   border-top: 1px solid $main-color;
+  input:focus, textarea:focus, select:focus{outline: none;}
   padding-top: 40px;
 margin-top: 200px;
   width: 90%;
@@ -163,7 +164,7 @@ margin-top: 200px;
   height: auto;
   color: $sec-color;
   font-family: 'Kern-r' , sans-serif;
-  p{font-family: 'Kern-b', sans-serif; margin-bottom: 0px;}
+//  p{font-family: 'Kern-b', sans-serif; margin-bottom: 0px;}
   .logo-footer{width: 30% ; .cls-1{fill:$main-color;}}
   .copyright{font-size: 0.8em; }
   .contacts {
@@ -173,7 +174,9 @@ margin-bottom: 20px;
 }
 .newsletter{ justify-self:end; font-family: 'Kern-b', sans-serif; padding: 20px 0;
 .email_field{display: grid;grid-template-columns: 70% 30%;}
-#email-field{
+#email-field{ 
+  input:focus, textarea:focus, select:focus{outline: none;}
+
   font-family: 'Kern-r' , sans-serif;
   margin-top: 10px;
   font-size: .95em;
@@ -184,4 +187,7 @@ margin-bottom: 20px;
 &:hover{background-color: $main-color; color: $body-color}
 };
 .copyright{font-size: .6em; opacity: .7;}
+
+.text-danger{p{margin: 0; font-family: 'Kern-i'; color: red; font-size: .8em}}
+.text-success{p{margin: 0; font-family: 'Kern-i'; color: $main-color; font-size: .8em}}
 }

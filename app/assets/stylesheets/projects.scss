@@ -123,6 +123,8 @@ a{ text-decoration: none;color: $new-project;
   gap: 10px;
   color: $sec-color;
   font-family: 'Kern-r' , sans-serif;
+  input:focus, textarea:focus, select:focus{outline: none;}
+
 
 .logo-footer{width: 20% ; .cls-1{fill:$main-color;}}
 .copyright{font-size: 0.8em; }
@@ -132,10 +134,14 @@ a{ text-decoration: none;color: $new-project;
   font-family: 'Kern-r' , sans-serif;
   margin-top: 10px;
   font-size: .95em;
-  border:none; color: $sec-color; background: none; border-bottom: 1px solid $main-color; padding-bottom: 5px;}
+border:none; color: $sec-color; background: none; border-bottom: 1px solid $main-color; padding-bottom: 5px;}
+input:focus, textarea:focus, select:focus{outline: none;}
 }
 #submit_btn{width: 150px; border:none; background: none; border:1px solid $main-color; padding:8px; margin-left: 15px;  font-family: 'Kern-b' , sans-serif;
  font-size:.9em;color: $sec-color;
 &:hover{background-color: $main-color; color: $body-color}
 }
 }
+
+.text-danger{margin: 0; font-family: 'Kern-i'; color: red; font-size: .8em}
+.text-success{margin: 0; font-family: 'Kern-i'; color: $main-color; font-size: .8em}
