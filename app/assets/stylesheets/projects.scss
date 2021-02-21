@@ -15,7 +15,7 @@ justify-self:start;
 font-family: 'Soyuz-Custom' , sans-serif;
 text-rendering: optimizeLegibility;
 text-decoration: none;
-font-size: 4em;
+font-size: 3.5em;
 margin: 8px auto;
 color: $main-color;
 
@@ -113,11 +113,12 @@ a{ text-decoration: none;color: $new-project;
 .footer-desk{
   border-top: 1px solid $main-color;
   padding-top: 20px;
-  position: fixed;
+  position: relative;
   bottom:0;
   width: 1200px;
-  margin-bottom: 50px;
-  height: 100px;
+  margin-top: 150px;
+  margin-bottom: 70px;
+//height: 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;

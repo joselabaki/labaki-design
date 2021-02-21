@@ -30,7 +30,6 @@ p{font-family: 'Kern-r', sans-serif; color: $sec-color; line-height: 135%; font-
 .main-container{
   width: 1200px;
   margin: 0 auto;
-  margin-top:55px;
 }
 
 
@@ -191,13 +190,15 @@ color: $body-color;
 }
 
 
+
+
 @media only screen and (min-width: 2400px) {
   /* For desktop: */
   html[data-theme="light"],   html[data-theme="dark"]{
     .main-container{width: 2000px;};
     .navigation{width: 2000px;};
     #nav-logo{width: 25%;};
-    .footer-desk{width: 2000px;}
+    .footer-desk{width: 2000px; margin-top: 250px;}
     .project-title {font-size: 4.5em;}
 
 }};
