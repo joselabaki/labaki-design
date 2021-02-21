@@ -34,13 +34,7 @@ p{font-family: 'Kern-r', sans-serif; color: $sec-color; line-height: 135%; font-
 .main-container{
   width: 1200px;
   margin: 0 auto;
-  cursor: url('the-tan.png'),auto;
 
-
-
-
-  a{  cursor: url('the-tan2.png'), pointer;
-}
 }
 
 
@@ -78,6 +72,18 @@ p{font-family: 'Kern-r', sans-serif; color: $sec-color; line-height: 135%; font-
   }
 
 }
+
+
+#follow{
+  position: absolute;
+  text-align:center;
+  svg{height: 50px;-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+.cls-1{fill: $main-color}
+}
+}
+
+
 //////////SWITCH INVERSION ////////////////////
 input#switch{display: none}
 .toggle-container{ cursor: pointer; svg{width: 25px; cursor: pointer; path{fill:$main-color; }}}
@@ -199,11 +205,8 @@ color: $body-color;
 &:hover{background-color: $body-color; color: $main-color}
 }}
 
-.main-container{
-  cursor: url('the-white.png'), auto;
-  a{  cursor: url('the-white2.png'), pointer;
-}
-}
+#follow{svg{.cls-1{fill: $body-color}}}
+
 
 }
 

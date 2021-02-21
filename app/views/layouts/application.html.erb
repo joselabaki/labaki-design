@@ -44,9 +44,9 @@
             </div><!-- static -->
 
 </div>
+<div id="follow"><%= inline_svg 'dino.svg'%></div>
 
 <div class="main-container">
-
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 <%= yield %>
@@ -68,8 +68,15 @@
 
 </div>
     <div class="copyright">&copy; 2021 Labaki Design <br> All Rights Reserved</div>
-
 </div>
+
+
+
+
+
+
+
+
 
 <script type="text/javascript">
 
@@ -125,6 +132,12 @@ $(document).ready(function(){
               $( "#submit_btn" ).val("Subscribed!");
             });
 
+            $(document).mousemove(function(e) {
+                $('#follow').offset({
+                    left: e.pageX,
+                    top: e.pageY + 20
+                });
+            });
 
   }); //Docready
 
