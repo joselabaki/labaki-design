@@ -34,8 +34,12 @@ p{font-family: 'Kern-r', sans-serif; color: $sec-color; line-height: 135%; font-
 .main-container{
   width: 1200px;
   margin: 0 auto;
-  cursor: url('tan.png'), auto;
-  a{  cursor: url('tan-2.png'), auto;
+  cursor: url('the-tan.png'),auto;
+
+
+
+
+  a{  cursor: url('the-tan2.png'), pointer;
 }
 }
 
@@ -143,7 +147,7 @@ opacity: 0.4;
 
 .arrow-click{svg{path{fill:$body-color}}};
 .info-container-mobile{.header-a{color: $body-color}; p{color: $body-color}; a{color: $sec-color}};
-.active{  border-bottom: 1px solid $sec-color;}
+.active{  border-bottom: 1px solid $body-color;}
 #previous-mobile{svg{fill:$body-color;}}
 #back-home-mobile{svg{ path{fill: $body-color}}}
 #next-mobile{svg{ fill:$body-color} }
@@ -162,8 +166,7 @@ color: $new-project;}}
 .nouveau {
 
 a{ text-decoration: none;color: $new-project;
-
-&:hover{ color: $body-color; -webkit-text-stroke: 1px $new-project;     -webkit-font-smoothing: antialiased;}}
+&:hover{ color: $main-color; -webkit-text-stroke: 1px $new-project;     -webkit-font-smoothing: antialiased;}}
 .subcat {color: $new-project}
 }
 
@@ -197,8 +200,8 @@ color: $body-color;
 }}
 
 .main-container{
-  cursor: url('white.png'), auto;
-  a{  cursor: url('white-2.png'), auto;
+  cursor: url('the-white.png'), auto;
+  a{  cursor: url('the-white2.png'), pointer;
 }
 }
 
@@ -213,7 +216,7 @@ color: $body-color;
     .main-container{width: 2000px;};
     .navigation{width: 2000px;};
     #nav-logo{width: 25%;};
-    .footer-desk{width: 2000px; margin-top: 250px;}
+    .footer-desk{width: 2000px; margin-top: 400px;}
     .project-title {font-size: 4.5em;}
 
 }};
