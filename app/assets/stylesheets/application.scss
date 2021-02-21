@@ -21,7 +21,11 @@
 
 html[data-theme="light"]{height: 100%; background-color: $body-color;}
 body{ margin: 0;padding: 0;
-  scroll-behavior: smooth;}
+  scroll-behavior: smooth;
+
+
+
+}
 
 
 p{font-family: 'Kern-r', sans-serif; color: $sec-color; line-height: 135%; font-size: 17px;
@@ -30,6 +34,9 @@ p{font-family: 'Kern-r', sans-serif; color: $sec-color; line-height: 135%; font-
 .main-container{
   width: 1200px;
   margin: 0 auto;
+  cursor: url('tan.png'), auto;
+  a{  cursor: url('tan-2.png'), auto;
+}
 }
 
 
@@ -104,6 +111,7 @@ opacity: 0.4;
 
   .contact, .references{margin-top: 80px;}
 .inner-content-links{line-height: 90%;}
+
 
 
   ///////////////////////////// COLOR INVERSION //////////////////////
@@ -187,6 +195,13 @@ color: $body-color;
 color: $body-color;
 &:hover{background-color: $body-color; color: $main-color}
 }}
+
+.main-container{
+  cursor: url('white.png'), auto;
+  a{  cursor: url('white-2.png'), auto;
+}
+}
+
 }
 
 
