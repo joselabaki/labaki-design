@@ -15,6 +15,10 @@
  */
  @import 'variables';
 
+   ////// media query /////
+
+
+
 html[data-theme="light"]{height: 100%; background-color: $body-color;}
 body{ margin: 0;padding: 0;
   scroll-behavior: smooth;}
@@ -183,9 +187,16 @@ color: $body-color;
 #submit_btn{ border:1px solid $body-color;
 color: $body-color;
 &:hover{background-color: $body-color; color: $main-color}
+}}
 }
-}
 
 
-
-  }
+@media only screen and (min-width: 2000px) {
+  /* For desktop: */
+  html[data-theme="light"],   html[data-theme="dark"]{
+    .main-container{width: 2000px;};
+    .navigation{width: 2000px;};
+    #nav-logo{width: 25%;};
+    .footer-desk{width: 2000px;};
+    .project-title {font-size: 5em;}
+}};
