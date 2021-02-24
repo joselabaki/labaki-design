@@ -56,7 +56,7 @@
   </div>
   <div class="newsletter">Newsletter<br>
 
-    <%= form_tag('', method: "post", id: "subscribe", remote: "true") do -%>
+    <%= form_tag('/emailapi/subscribe', method: "post", id: "subscribe", remote: "true") do -%>
       <div class="email_field">
 
       <%= email_field(:email, :address, {id: "email-field", placeholder: "Your email"}) %>
