@@ -8,4 +8,5 @@ root :to => redirect('en/projects')
 
 From Gizzard;
 From Resq;
-Heroku-18 to Heroku-22
+From Alpha
+Heroku-18 to Heroku-22 (?)
