@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.2'
+ruby '3.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.8'
+gem 'rails', '~>7.0.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -61,6 +61,8 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+
+
 # Added by admin
 gem 'carrierwave'
 gem 'activerecord-reset-pk-sequence'
@@ -74,4 +76,4 @@ gem "mini_magick"
 gem "fog-aws"
 gem 'gibbon', :git => 'https://github.com/amro/gibbon.git'
 gem 'figaro'
-
+gem 'psych', '~> 3'
