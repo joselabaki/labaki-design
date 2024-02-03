@@ -6,6 +6,7 @@
   justify-items: center;
   align-items: center;
   height: 100%;
+  background-color: $main-color;
 
 }
 
@@ -19,13 +20,13 @@
 #construction{
   font-family: 'Soyuz-Custom' , 'Kern-r' , sans-serif;
   font-size: 3em;
-  color: $main-color;
+  color:   $new-accent;
   margin: 0;
 }
 #construction-mobile{
   font-family: 'Soyuz-Custom' , 'Kern-r' , sans-serif;
   font-size: 2em;
-  color: $main-color;
+  color: $new-accent;
   margin: 0;
 }
 
@@ -34,11 +35,11 @@
 #const-conact{a{
   font-family: 'Kern-r';
   font-size: 1em;
-  color: $sec-color;
+  color: $new-accent;
   text-decoration: none;
   &:hover{
     padding-bottom: 5px;
-    border-bottom: 1px solid $sec-color;
+    border-bottom: 1px solid $new-accent;
 
   }
 }}

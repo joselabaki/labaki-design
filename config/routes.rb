@@ -14,7 +14,8 @@ valid_locale = /#{I18n.available_locales.join("|")}/
 
   # Apply the locale constraint to the scope
   scope "(:locale)", locale: valid_locale, constraints: locale_constraint do
-    root :to => 'static_pages#construction'
+    #root :to => 'static_pages#construction'
+    root :to => 'projects#index'
     resources :projects
     resources :references
 
