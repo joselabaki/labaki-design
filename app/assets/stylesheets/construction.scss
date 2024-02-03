@@ -1,12 +1,18 @@
 @import 'variables';
 
 
+
+body{
+  margin: 0;
+}
+
 .construction{
   display: grid;
   justify-items: center;
   align-items: center;
   height: 100%;
   background-color: $main-color;
+
 
 }
 
